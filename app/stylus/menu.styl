@@ -1,3 +1,25 @@
 .menu
+  &-header
+    display: flex
+    height: 55px
+    padding-left: 25px
+    align-items center
+    cursor pointer
+    p
+      margin-left 25px
+      font-family "GothamProRegular"
+      font-size 16px
   ul
     background darkblue
+    padding 0 0 15px
+    margin-top: -460px
+    transition all .5s ease
+    &.open
+      margin: 0
+    li
+      padding 10px 25px
+      min-height 40px
+      &:hover
+        background: blue
+      a
+        font-size 12px

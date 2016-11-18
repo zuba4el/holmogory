@@ -1,0 +1,33 @@
+.sitebar
+	width 231px
+	background lightgray
+	font-family 'GothamProMedium'
+	&-item
+		padding 20px 30px
+		&_active
+			background active
+			padding 20px 30px
+		
+		&--date
+			font-weight 600
+			line-height 30px
+			font-size 18px
+			color gray  
+a.sitebar_a
+	color blue
+	line-height 25px
+	text-decoration underline 
+	font-weight 400
+	font-size 18px
+	padding 25px
+	font-family 'GothamProMedium'//здесь поставил подчеркивание строкой, т.к. в css нет возможности, а для оформления на js нужно перевести в строку, посчитать, сколько войдет в ряд, преобразовать в n строк и им задавать border-bottom. Это дикий костыль, поэтому лучше изменить макет
+.all
+	@extend a.sitebar_a
+	&::before
+		content ""
+		width 35px
+		height 35px
+		background url('../img/arrows.png')
+		display block
+		background-position: 36px 0
+		margin-bottom 10px
