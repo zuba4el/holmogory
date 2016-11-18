@@ -10,6 +10,16 @@ body {
 .wrapper.pub {
   display: flex;
 }
+h1 {
+  font-size: 30px;
+  color: #fff;
+  font-family: "GothamProRegular";
+}
+h2 {
+  font-size: 25px;
+  color: #336687;
+  font-family: "GothamProRegular";
+}
 a {
   font-size: 14px;
   color: #fff;
@@ -41,6 +51,18 @@ p {
 @font-face {
   font-family: 'Roboto';
   src: local('../Roboto/fonts/Roboto Thin'), local('Roboto-Thin'), url("../fonts/Roboto/Robotothin.woff2") format('woff2'), url("../fonts/Roboto/Robotothin.woff") format('woff'), url("../fonts/Roboto/Robotothin.ttf") format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('../Roboto/fonts/Roboto Thin'), local('Roboto-Thin'), url("../fonts/Roboto/Robotothin.woff2") format('woff2'), url("../fonts/Roboto/Robotothin.woff") format('woff'), url("../fonts/Roboto/Robotothin.ttf") format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: local('../Roboto/fonts/Roboto'), local('Roboto-Regular'), url("../fonts/Roboto/Roboto.woff2") format('woff2'), url("../fonts/Roboto/Roboto.woff") format('woff'), url("../fonts/Roboto/Roboto.ttf") format('truetype');
   font-weight: 100;
   font-style: normal;
 }
@@ -96,43 +118,6 @@ header .wrapper {
   font-weight: 600;
   font-family: 'Roboto';
 }
-.sitebar {
-  width: 231px;
-  background: #e0e0e0;
-  font-family: 'GothamProMedium';
-}
-.sitebar-item {
-  padding: 20px 30px;
-}
-.sitebar-item_active {
-  background: #cbd3d8;
-  padding: 20px 30px;
-}
-.sitebar-item--date {
-  font-weight: 600;
-  line-height: 30px;
-  font-size: 18px;
-  color: #a3a3a3;
-}
-a.sitebar_a,
-.all {
-  color: #336687;
-  line-height: 25px;
-  text-decoration: underline;
-  font-weight: 400;
-  font-size: 18px;
-  padding: 25px;
-  font-family: 'GothamProMedium';
-}
-.all::before {
-  content: "";
-  width: 35px;
-  height: 35px;
-  background: url("../img/arrows.png");
-  display: block;
-  background-position: 36px 0;
-  margin-bottom: 10px;
-}
 .menu-header {
   display: flex;
   height: 55px;
@@ -163,4 +148,76 @@ a.sitebar_a,
 }
 .menu ul li a {
   font-size: 12px;
+}
+.sitebar {
+  width: 231px;
+  background: #e0e0e0;
+  font-family: 'GothamProMedium';
+}
+.sitebar-item {
+  padding: 20px 30px;
+}
+.sitebar-item_active {
+  background: #cbd3d8;
+  padding: 20px 30px;
+}
+.sitebar-item--date,
+.public-fill--date {
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 18px;
+  color: #a3a3a3;
+}
+a.sitebar_a,
+.all {
+  color: #336687;
+  line-height: 25px;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 25px;
+  font-family: 'GothamProMedium';
+}
+.all::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background: url("../img/arrows.png");
+  display: block;
+  background-position: 36px 0;
+  margin-bottom: 10px;
+}
+.public {
+  width: calc(100% - 231px);
+  position: relative;
+  background: #fff;
+  padding: 56px;
+  font-family: 'GothamProMedium';
+}
+.public-head {
+  width: 100%;
+  height: 114px;
+  background: url("../img/bg_header.jpg") no-repeat;
+  background-size: 100%;
+  padding: 56px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.public-fill {
+  margin-top: 85px;
+}
+.public-fill--date {
+  padding: 10px 0;
+}
+.public-fill p {
+  color: #000;
+  font-family: 'RobotoRegular';
+  margin: 10px 0;
+}
+.public-fill--gallery {
+  width: calc(100% + 112px);
+  height: 591px;
+  margin: 0 -56px;
+  background: url("../img/bg_slider.jpg");
 }

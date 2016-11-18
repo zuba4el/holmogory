@@ -1,0 +1,29 @@
+.public
+	width calc(100% - 231px)
+	position relative
+	background #fff
+	padding 56px
+	font-family 'GothamProMedium'
+	&-head
+		width 100%
+		height 114px
+		background url('../img/bg_header.jpg') no-repeat
+		background-size 100%
+		padding 56px
+		position absolute
+		top 0
+		left 0
+	&-fill
+		margin-top 85px
+		&--date
+			@extend .sitebar-item--date
+			padding 10px 0
+		p
+			color #000
+			font-family 'RobotoRegular'
+			margin 10px 0
+		&--gallery
+			width calc(100% + 112px)
+			height 591px
+			margin 0 -56px
+			background url('../img/bg_slider.jpg')
