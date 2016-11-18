@@ -5,7 +5,7 @@ body
 .wrapper {
   max-width 1233px
   margin 55px auto 0
-  box-shadow 0px 0px 10px 0px black
+  box-shadow shadow
   position relative
   &.pub{
     display: flex
@@ -19,13 +19,16 @@ h1{
 h2{
   font-size 25px
   color blue
-  font-family "GothamProRegular"
+  font-family "GothamProMedium"
 }
 a{
   font-size 14px
   color #fff
   font-family "GothamProRegular"
   text-decoration none
+}
+b{
+  font-weight 600
 }
 p{
   color #fff  
@@ -35,9 +38,55 @@ p{
 .content{
   margin-top 55px
 }
+.btn_more{
+  background blue
+  color #fff
+  border-radius 5px
+  border 0
+  width 160px
+  height 30px
+  cursor pointer
+  transition animation
+  &:hover{
+    background darkblue
+  }
+  }
+.pagginaton{
+  width 100%
+  &_prew{
+    width 35px
+    height 35px
+    background arrows
+    background-position arrows-prew
+    float left
+    cursor pointer
+    &:hover{
+    background arrows
+    background-position arrows-prew-hover
+    }
+    }
+  &_next{
+    width 35px
+    height 35px
+    background arrows
+    background-position arrows-next
+    float right
+    cursor pointer
+    &:hover{
+    background arrows
+    background-position arrows-next-hover
+    }
+    }
+}
+.studio{
+  &::after{
+    content '\00A9'
+  }
+}
 @import "fonts.styl"
 @import "header.styl"
 @import "menu.styl"
 @import "content.styl"
 @import "left.styl"
 @import "public.styl"
+@import "footer.styl"

@@ -2,7 +2,7 @@
 	width calc(100% - 231px)
 	position relative
 	background #fff
-	padding 56px
+	padding 56px 56px 30px
 	font-family 'GothamProMedium'
 	&-head
 		width 100%
@@ -16,14 +16,43 @@
 	&-fill
 		margin-top 85px
 		&--date
-			@extend .sitebar-item--date
+			@extend .sitebar-item--date //TODO in mixin
 			padding 10px 0
 		p
 			color #000
-			font-family 'RobotoRegular'
+			font-family 'RobotoRegular' //TODO robotobold
 			margin 10px 0
 		&--gallery
 			width calc(100% + 112px)
 			height 591px
-			margin 0 -56px
+			margin 35px -56px
 			background url('../img/bg_slider.jpg')
+	&-more
+		margin-top 65px
+		&--item
+			border 2px solid more-item
+			clear both
+			margin 35px 0
+			padding 20px
+			min-height 205px
+			position relative
+			transition animation
+			&:hover
+				background more-item
+			&--img
+				float left
+				margin-right 35px
+			&--date
+				font-family "RobotoRegular" //TODO robotobold
+				color blue
+				font-size 14px
+				font-weight 600
+				padding 0 0 10px
+			&_text
+				font-size 14px
+				font-family "RobotoRegular"
+				padding 10px 0
+		.btn_more
+			position absolute
+			right 20px
+			bottom 20px
