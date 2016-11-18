@@ -1,0 +1,25 @@
+.gallery
+	width 60%
+	margin 0 auto
+	&-current
+		width 100%
+		margin-bottom 10px
+		&--item
+			width 100%
+	&-list
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content center
+		width 100%
+		position relative
+		&--item
+			width calc(33.33% - 5px)
+			margin 0 5px
+		.paggination
+			position absolute
+			width 120%
+			top calc(50% - 17px)
+			z-index: 0

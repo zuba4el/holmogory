@@ -53,6 +53,7 @@ p{
   }
 .pagginaton{
   width 100%
+  height 0
   &_prew{
     width 35px
     height 35px
@@ -63,6 +64,10 @@ p{
     &:hover{
     background arrows
     background-position arrows-prew-hover
+    }
+    &__white{
+      @extend .pagginaton_prew
+      @extend .pagginaton_prew:hover
     }
     }
   &_next{
@@ -75,6 +80,10 @@ p{
     &:hover{
     background arrows
     background-position arrows-next-hover
+    }
+    &__white{
+      @extend .pagginaton_next
+      @extend .pagginaton_next:hover
     }
     }
 }
@@ -89,4 +98,5 @@ p{
 @import "content.styl"
 @import "left.styl"
 @import "public.styl"
+@import "gallery.styl"
 @import "footer.styl"
