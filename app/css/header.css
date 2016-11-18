@@ -1,0 +1,47 @@
+header {
+  width: 100%;
+  height: 55px;
+  background: #00f;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.header-top_menu {
+  width: 231px;
+  height: 55px;
+  background: #00008b;
+}
+.header-top_nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+}
+.header-top_nav li {
+  margin: 0 0.5em;
+}
+.header-top_phone p {
+  padding-top: 5px;
+}
+.header-top_phone a {
+  font-size: 20px;
+  line-height: 2;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Roboto';
+}

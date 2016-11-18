@@ -1,0 +1,104 @@
+@import "http://webfonts.ru/import/roboto.css";
+@import "http://allfont.ru/allfont.css?fonts=roboto-thin";
+@import "http://allfont.ru/allfont.css?fonts=roboto-medium";
+@import "http://allfont.ru/allfont.css?fonts=roboto-light";
+@font-face {
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"), url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "GothamProMedium";
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+  src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"), url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('../fonts/Roboto Thin'), local('Roboto-Thin'), url("../fonts/Robotothin.woff2") format('woff2'), url("../fonts/Robotothin.woff") format('woff'), url("../fonts/Robotothin.ttf") format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+header {
+  width: 100%;
+  height: 55px;
+  background: #336687;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.header-top_menu {
+  width: 231px;
+  height: 55px;
+  background: #1f3d52;
+}
+.header-top_nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+}
+.header-top_nav li {
+  margin: 0 0.5em;
+}
+.header-top_phone p {
+  padding-top: 5px;
+}
+.header-top_phone a {
+  font-size: 20px;
+  line-height: 2;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Roboto';
+}
+.button {
+  width: 100px;
+  height: 50px;
+  background: #f0f;
+}
+.menu ul {
+  background: #1f3d52;
+}
+body {
+  background: #e0e0e0;
+}
+.wrapper {
+  max-width: 1233px;
+  margin: 0 auto;
+  position: relative;
+}
+h1 {
+  font-size: 56px;
+  padding: 50px;
+  color: #1f3d52;
+  background: #336687;
+}
+a {
+  font-size: 14px;
+  color: #fff;
+  font-family: "GothamProRegular";
+  text-decoration: none;
+}
+p {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 14px;
+}

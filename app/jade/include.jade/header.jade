@@ -1,0 +1,33 @@
+doctype html
+head
+  meta(charset="utf-8")
+  title holmogory
+  link(rel='stylesheet', href='css/reset.css')
+  link(rel='stylesheet', href='css/main.css')
+  script(type='text/javascript', src='../bower_components/jquery/dist/jquery.js')
+  script(type='text/javascript', src='js/app.js')
+body
+  header
+    .wrapper
+      .header-top
+        .header-top_menu
+          include menu.jade
+        ul.header-top_nav
+          li
+            a(href="#") 
+              img(src="img/logo.png", alt="logo")
+          li
+            a(href="#") Об управлении
+          li
+            a(href="#") Публикации в СМИ
+          li
+            a(href="#") Фотогалерея
+          li
+            a(href="#") Важно
+          li
+            a(href="#") Росавтодор
+        .header_phone
+          P телефон для связи:
+          a(tel="+7(8172)72-37-55") +7(8172)72-37-55
+    block content
+  
