@@ -3,23 +3,30 @@
 body
 	background lightgray
 .wrapper {
-  max-width 1233px
+  max-width 1200px
   margin 55px auto 0
   box-shadow shadow
   position relative
-  &.pub{
-    display: flex
+  @media (max-width 1200px){
+    max-width 960px
+    width 100%
   }
 }
 h1{
   font-size 30px
   color #fff
   font-family "GothamProRegular"
+  @media (max-width 480px){
+    font-size 24px
+  }
 }
 h2{
   font-size 25px
   color blue
   font-family "GothamProMedium"
+  @media (max-width 480px){
+    font-size 18px
+  }
 }
 a{
   font-size 14px
@@ -50,10 +57,21 @@ p{
   &:hover{
     background darkblue
   }
+  &.mobile{
+    width 80%
+    text-align center
+    margin 0 auto
+    line-height 1.8
+    text-decoration
+      @media (max-width 480px){
+        display block
+      }
+  }
   }
 .pagginaton{
   width 100%
   height 0
+  padding 0 0 20px 0
   &_prew{
     width 35px
     height 35px
@@ -91,6 +109,9 @@ p{
   &::after{
     content '\00A9'
   }
+}
+.mobile{
+  display none
 }
 @import "fonts.styl"
 @import "header.styl"

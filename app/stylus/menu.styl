@@ -5,15 +5,22 @@
     padding-left: 25px
     align-items center
     cursor pointer
+    @media (max-width 480px)
+      padding-left 15px
     p
       margin-left 25px
-      font-family "GothamProRegular"
+      font-family "GothamProMedium"
       font-size 16px
+      @media (max-width 480px)
+        display none
   ul
     background darkblue
     padding 0 0 15px
-    margin-top: -460px
+    margin-top: -480px
     transition animation
+    @media (max-width 480px)
+      position absolute
+      width 100%
     &.open
       margin: 0
     li

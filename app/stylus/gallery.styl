@@ -1,6 +1,8 @@
 .gallery
 	width 60%
 	margin 0 auto
+	@media (max-width 768px)
+		width 90%
 	&-current
 		width 100%
 		margin-bottom 10px
@@ -15,6 +17,8 @@
 		justify-content center
 		width 100%
 		position relative
+		@media (max-width 768px)
+			display none
 		&--item
 			width calc(33.33% - 5px)
 			margin 0 5px
@@ -22,4 +26,5 @@
 			position absolute
 			width 120%
 			top calc(50% - 17px)
+			left -10%
 			z-index: 0

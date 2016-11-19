@@ -4,31 +4,56 @@
 	background #fff
 	padding 56px 56px 30px
 	font-family 'GothamProMedium'
+	@media (max-width 960px)
+		width 100%
+	@media (max-width 480px)
+		padding 10px
 	&-head
 		width 100%
 		height 114px
 		background url('../img/bg_header.jpg') no-repeat
-		background-size 100%
+		background-size cover
 		padding 56px
 		position absolute
 		top 0
 		left 0
+		@media (max-width 480px)
+			padding 10px
+			height 55px
 	&-fill
 		margin-top 85px
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		h2
+			@media (max-width 768px)
+				order -1
 		&--date
 			@extend .sitebar-item--date //TODO in mixin
 			padding 10px 0
 		p
 			color #000
-			font-family 'RobotoRegular' //TODO robotobold
+			font-family 'RobotoRegular'
 			margin 10px 0
 		&--gallery
 			margin 35px -56px
 			background url('../img/bg_slider.jpg') no-repeat
 			background-size 100%
 			padding 40px
+			@media (max-width 768px)
+				order -1
+				padding 0
+				background transparent
+				margin 10px -35px
 	&-more
 		margin-top 65px
+		@media (max-width 768px)
+			margin 0
+			h2
+				margin 20px 0
 		&--item
 			border 2px solid more-item
 			clear both
@@ -37,22 +62,55 @@
 			min-height 205px
 			position relative
 			transition animation
+			.head
+				font-weight 600
+				display block
+			@media (max-width 768px)
+				border 0
+				padding 0
+				margin 0
+				min-height 220px
+			@media (max-width 480px)
+				min-height 150px
 			&:hover
 				background more-item
+				@media (max-width 768px)
+					background transparent
 			&--img
 				float left
 				margin-right 35px
+				@media (max-width 768px)
+					margin-right 5px
+				@media (max-width 768px)
+					width 50%
 			&--date
-				font-family "RobotoRegular" //TODO robotobold
+				font-family "RobotoRegular"
 				color blue
 				font-size 14px
 				font-weight 600
 				padding 0 0 10px
+				@media (max-width 768px)
+					display none
 			&_text
 				font-size 14px
 				font-family "RobotoRegular"
 				padding 10px 0
+				@media (max-width 768px)
+					font-size 0
+					.head
+						font-size 14px
+						@media (max-width 480px)
+							font-size 12px					
 		.btn_more
 			position absolute
 			right 20px
 			bottom 20px
+			@media (max-width: 1200px) 
+				position relative
+				right 0
+				bottom 0
+				@media (max-width 768px)
+					display none
+	.pagginaton
+		@media (max-width 480px)
+			display none
