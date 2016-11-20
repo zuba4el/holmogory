@@ -33,6 +33,16 @@ h2 {
     font-size: 18px;
   }
 }
+h3 {
+  font-size: 20px;
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  h3 {
+    font-size: 15px;
+  }
+}
 a {
   font-size: 14px;
   color: #fff;
@@ -53,6 +63,8 @@ p {
 .btn_more {
   background: #336687;
   color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border-radius: 5px;
   border: 0;
   width: 160px;
@@ -396,6 +408,67 @@ a.sitebar_a,
     height: 55px;
   }
 }
+.public .paggination {
+  margin: 22px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.public .paggination .page {
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+.public .paggination .page:hover {
+  background: #cbd3d8;
+}
+.public .paggination .page.active {
+  color: #fff;
+  background: #336687;
+}
+.public .paggination a {
+  color: #000;
+  font-family: "RobotoLight";
+  font-size: 16px;
+  margin-right: 10px;
+}
+.public .paggination ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.public .paggination ul a {
+  font-family: "RobotoRegular";
+}
+.public .paggination-year {
+  padding: 8px 15px;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: #336687;
+  margin-right: 20px;
+}
+@media (max-width: 1200px) {
+  .public .paggination-year {
+    margin: 5px;
+  }
+}
+.public .paggination-year.active {
+  font-family: "RobotoBold";
+  color: #336687;
+  background: #cbd3d8;
+}
 .public-fill {
   margin-top: 85px;
   display: -webkit-flex;
@@ -543,6 +616,12 @@ a.sitebar_a,
     display: none;
   }
 }
+.public.full {
+  width: 100%;
+}
+.public.full .public-more--item {
+  margin: 10px 0;
+}
 .gallery {
   width: 60%;
   margin: 0 auto;
@@ -583,7 +662,7 @@ a.sitebar_a,
   width: 120%;
   top: calc(50% - 17px);
   left: -10%;
-  z-index: 0;
+  height: 0;
 }
 footer {
   width: 100%;
