@@ -4,9 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>holmogory</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <link rel="stylesheet" href="css/template-style.css">
 </head>
 <body>
   <header>
@@ -31,7 +29,7 @@
           </div>
         </div>
         <ul class="header-top_nav">
-          <li><a href="#"> <img src="img/logo.png" alt="logo"></a></li>
+          <li><a href="index.html"> <img src="img/logo.png" alt="logo"></a></li>
           <li><a href="#">Об управлении</a></li>
           <li><a href="#">Публикации в СМИ</a></li>
           <li><a href="#">Фотогалерея</a></li>
@@ -81,10 +79,8 @@
             <div class="gallery">
               <div class="gallery-current"><img src="img/slider/img-1.jpg" alt="" class="gallery-current--item"></div>
               <div class="gallery-list"><img src="img/slider/img-2.jpg" alt="" class="gallery-list--item"><img src="img/slider/img-3.jpg" alt="" class="gallery-list--item"><img src="img/slider/img-4.jpg" alt="" class="gallery-list--item">
-                <div class="paggination">
-                  <div class="pagginaton_prew__white"></div>
-                  <div class="pagginaton_next__white"></div>
-                </div>
+                <div class="arrow-prew"></div>
+                <div class="arrow-next"></div>
               </div>
             </div>
           </div>
@@ -107,19 +103,19 @@
             <div class="public-more--item_text"><span class="head">В облсобрании обсудили возможность реконструкции опасного участка трассы Северодвинск — Архангельск.</span> <br><br> Вопрос реконструкции на трассе Северодвинск — Архангельск обсудили на совещании депутаты областного собрания, Росавтодор, ГИБДД и правительство Архангельской области.</div>
             <button class="btn_more">Узнать подробнее</button>
           </div>
+          <div class="arrows"><a href="#" class="arrow-prew"></a><a href="#" class="arrow-next"></a></div>
+          <div class="btn_more mobile">Посмотреть последние</div>
         </div>
-        <div class="pagginaton">
-          <div class="pagginaton_prew"></div>
-          <div class="pagginaton_next"></div>
-        </div>
-        <div class="btn_more mobile">Посмотреть последние</div>
       </div>
     </div>
   </div>
+  <div class="clear"></div>
   <footer>
     <div class="wrapper">
       <div class="company">ФКУ УПРДОР "Холмогоры" 2016.</div>
       <div class="studio">Разработка и дизайн - <span> Aitek </span></div>
     </div>
   </footer>
+  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>

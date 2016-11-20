@@ -4,9 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>holmogory</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/main.css">
-  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
-  <script type="text/javascript" src="js/app.js"></script>
+  <link rel="stylesheet" href="css/template-style.css">
 </head>
 <body>
   <header>
@@ -31,7 +29,7 @@
           </div>
         </div>
         <ul class="header-top_nav">
-          <li><a href="#"> <img src="img/logo.png" alt="logo"></a></li>
+          <li><a href="index.html"> <img src="img/logo.png" alt="logo"></a></li>
           <li><a href="#">Об управлении</a></li>
           <li><a href="#">Публикации в СМИ</a></li>
           <li><a href="#">Фотогалерея</a></li>
@@ -86,17 +84,29 @@
             <button class="btn_more">Узнать подробнее</button>
           </div>
         </div>
-        <div class="paggination"><a href="#">Начало</a><a href="#">Пред.</a>
-          <ul><a href="#">
-              <li class="page active">1</li></a><a href="#">
-              <li class="page">2</li></a><a href="#">
-              <li class="page">3</li></a><a href="#">
-              <li class="page">4</li></a><a href="#">
-              <li class="page">5</li></a>
-          </ul><a href="#">След.</a><a href="#">Конец</a><a href="#">Все</a>
-        </div>
+        <ul class="paggination">
+          <li class="page_not"><a href="#">Начало</a></li>
+          <li class="page"><a href="#">Пред.</a></li>
+          <li class="page number active"><a href="#">1</a></li>
+          <li class="page number"><a href="#">2</a></li>
+          <li class="page number"><a href="#">3</a></li>
+          <li class="page number"><a href="#">4</a></li>
+          <li class="page number"><a href="#">5</a></li>
+          <li class="page"><a href="#">След.</a></li>
+          <li class="page_not"><a href="#">Конец</a></li>
+          <li class="page_not"><a href="#">Все</a></li>
+        </ul>
         <div class="btn_more mobile">Посмотреть последние</div>
       </div>
     </div>
   </div>
+  <div class="clear"></div>
+  <footer>
+    <div class="wrapper">
+      <div class="company">ФКУ УПРДОР "Холмогоры" 2016.</div>
+      <div class="studio">Разработка и дизайн - <span> Aitek </span></div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 </body>

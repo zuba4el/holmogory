@@ -1,12 +1,20 @@
+.pub
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	+media(960px)
+		flex-direction column-reverse
 .public
 	width calc(100% - 231px)
 	position relative
 	background #fff
 	padding 56px 56px 30px
 	font-family 'GothamProMedium'
-	@media (max-width 960px)
+	+media(960px)
 		width 100%
-	@media (max-width 480px)
+	+media(480px)
 		padding 10px
 	&-head
 		width 100%
@@ -17,56 +25,9 @@
 		position absolute
 		top 0
 		left 0
-		@media (max-width 480px)
+		+media(480px)
 			padding 10px
 			height 55px
-	.paggination // TODO refactor this! paggination in main style 
-		margin 22px 0
-		display -webkit-flex
-		display -moz-flex
-		display -ms-flex
-		display -o-flex
-		display flex
-		flex-wrap wrap
-		justify-content center
-		align-items center
-		.page
-			width 33px
-			height 33px
-			line-height 33px
-			text-align center
-			border-radius (50%)
-			transition animation
-			&:hover
-				background active
-			&.active
-				color #fff
-				background blue
-		a
-			color #000
-			font-family "RobotoLight"
-			font-size 16px
-			margin-right 10px
-		ul
-			display -webkit-flex
-			display -moz-flex
-			display -ms-flex
-			display -o-flex
-			display flex
-			a
-				font-family "RobotoRegular"
-		&-year
-			padding 8px 15px
-			font-family "Roboto"
-			font-size 16px
-			color blue
-			margin-right 20px
-			@media (max-width 1200px)
-				margin 5px
-			&.active
-				font-family "RobotoBold"
-				color blue
-				background active
 	&-fill
 		margin-top 85px
 		display -webkit-flex
@@ -76,7 +37,7 @@
 		display flex
 		flex-direction column
 		h2
-			@media (max-width 768px)
+			+media(768px)
 				order -1
 		&--date
 			@extend .sitebar-item--date //TODO in mixin
@@ -90,14 +51,24 @@
 			background url('../img/bg_slider.jpg') no-repeat
 			background-size 100%
 			padding 40px
-			@media (max-width 768px)
+			+media(768px)
 				order -1
 				padding 0
 				background transparent
 				margin 10px -35px
+		.paggination
+			justify-content flex-start
+			a
+				font-family "RobotoRegular"
+			&-year
+				padding 8px 15px
+				color blue
+				&.active
+					background active
+					font-weight 600
 	&-more
 		margin-top 65px
-		@media (max-width 768px)
+		+media(768px)
 			margin 0
 			h2
 				margin 20px 0
@@ -112,23 +83,23 @@
 			.head
 				font-weight 600
 				display block
-			@media (max-width 768px)
+			+media(768px)
 				border 0
 				padding 0
 				margin 0
 				min-height 220px
-			@media (max-width 480px)
+			+media(480px)
 				min-height 150px
 			&:hover
 				background more-item
-				@media (max-width 768px)
+				+media(768px)
 					background transparent
 			&--img
 				float left
 				margin-right 35px
-				@media (max-width 768px)
+				+media(768px)
 					margin-right 5px
-				@media (max-width 768px)
+				+media(768px)
 					width 50%
 			&--date
 				font-family "RobotoRegular"
@@ -136,31 +107,29 @@
 				font-size 14px
 				font-weight 600
 				padding 0 0 10px
-				@media (max-width 768px)
+				+media(768px)
 					display none
 			&_text
 				font-size 14px
 				font-family "RobotoRegular"
 				padding 10px 0
-				@media (max-width 768px)
+				+media(768px)
 					font-size 0
 					.head
 						font-size 14px
-						@media (max-width 480px)
+						+media(480px)
 							font-size 12px					
 		.btn_more
 			position absolute
 			right 20px
 			bottom 20px
-			@media (max-width: 1200px) 
+			+media(1200px) 
 				position relative
 				right 0
 				bottom 0
-				@media (max-width 768px)
-					display none
-	.pagginaton
-		@media (max-width 480px)
-			display none
+		.arrows
+			+media(480px)
+				display none
 	&.full
 		width 100%
 		.public

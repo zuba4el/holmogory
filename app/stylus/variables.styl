@@ -13,8 +13,9 @@ arrows-prew-hover = 0 35px	//bg-position
 arrows-next-hover = 35px 35px //bg-position
 
 //****MIXINs
-
-border-radius()
-  -webkit-border-radius arguments
-  -moz-border-radius arguments
-  border-radius arguments
+media(maxWidth)
+    @media screen and (max-width: maxWidth)
+        {block}
+size(width, height)
+	width width
+	height height

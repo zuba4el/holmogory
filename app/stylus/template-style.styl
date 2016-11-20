@@ -1,0 +1,105 @@
+@import "variables.styl"
+@import "sprite.styl"
+
+body
+  background lightgray
+.wrapper
+  max-width 1200px
+  margin 55px auto 0
+  box-shadow shadow
+  position relative
+    &.pub
+      display -webkit-flex
+      display -moz-flex
+      display -ms-flex
+      display -o-flex
+      display flex
+      +media(960px)
+        flex-direction column-reverse
+  +media(1200px)
+    max-width 960px
+    width 100%
+h1
+  font-size 30px
+  color #fff
+  font-family "GothamProRegular"
+  +media(480px)
+    font-size 24px
+h2
+  font-size 25px
+  color blue
+  font-family "GothamProMedium"
+  +media(480px)
+    font-size 18px
+h3
+  font-size 20px
+  font-family "GothamProRegular"
+  text-transform uppercase
+  +media(480px)
+    font-size 15px
+a
+  font-size 14px
+  color #fff
+  font-family "GothamProRegular"
+  text-decoration none
+p
+  font-size 14px
+  color #fff
+  font-family "GothamProRegular"
+.content
+  margin-top 55px
+.btn_more
+  background blue
+  color #fff
+  border-radius 5px
+  border 0
+  size (160px 30px)
+  cursor pointer
+  transition animation
+  &:hover
+    background darkblue
+  &.mobile
+    width 80%
+    text-align center
+    margin 0 auto
+    line-height 1.8
+    display none
+    +media(480px)
+      display block
+.studio
+  &::after
+    content '/00A9'
+.clear
+  clear both
+.fl
+  float left
+.fr
+  float right
+.arrows
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+  justify-content space-between
+.guide
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+  margin 2em
+  justify-content flex-start
+  align-items center
+  q
+    border 1px solid black
+    padding 5px
+
+@import "fonts.styl"
+@import "header.styl"
+@import "menu.styl"
+@import "paggination.styl"
+@import "left.styl"
+@import "public.styl"
+@import "gallery.styl"
+@import "footer.styl"

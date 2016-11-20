@@ -29,16 +29,5 @@
         .public-more--item--date 28.07.2016
         .public-more--item_text <span class="head">В облсобрании обсудили возможность реконструкции опасного участка трассы Северодвинск — Архангельск.</span> <br><br> Вопрос реконструкции на трассе Северодвинск — Архангельск обсудили на совещании депутаты областного собрания, Росавтодор, ГИБДД и правительство Архангельской области.
         button.btn_more Узнать подробнее
-    .paggination
-      a(href="#") Начало
-      a(href="#") Пред.
-      ul
-        a(href="#")
-          li.page.active 1
-        each val in [2, 3, 4, 5]
-          a(href="#")
-            li.page= val
-      a(href="#") След.
-      a(href="#") Конец
-      a(href="#") Все
+    include paggination.jade
     .btn_more.mobile Посмотреть последние

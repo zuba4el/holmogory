@@ -1,0 +1,25 @@
+extends include.jade/header.jade
+
+block content
+  .content
+    .wrapper
+      .public.full
+          .public-head
+              h1 styleguide
+          .public-fill
+            h2 стрелки
+            .guide
+              a(href="#").arrow-prew
+              code &nbsp;&nbsp;.arrow-prew &nbsp;&nbsp;
+              a(href="#").arrow-next
+              code &nbsp;&nbsp;.arrow-next &nbsp;&nbsp;
+              a(href="#").arrow-up
+              code &nbsp;&nbsp;.arrow-up &nbsp;&nbsp;
+              a(href="#").arrow-down
+              code &nbsp;&nbsp;.arrow-down &nbsp;&nbsp;
+            h2 паггинация
+            .guide
+              q
+                include include.jade/paggination
+              code &nbsp;&nbsp; include paggination
+  include include.jade/footer.jade

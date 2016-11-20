@@ -1,0 +1,16 @@
+ul.paggination
+  li.page_not
+    a(href="#") Начало
+  li.page
+    a(href="#") Пред.
+  li.page.number.active
+    a(href="#") 1
+  each val in [2, 3, 4, 5]
+    li.page.number
+      a(href="#")= val
+  li.page
+    a(href="#") След.
+  li.page_not
+    a(href="#") Конец
+  li.page_not
+    a(href="#") Все
