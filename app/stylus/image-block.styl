@@ -1,0 +1,38 @@
+.image-block
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	margin 0 25px 25px 0
+	img
+		width calc(33.33% - 10px)
+		margin-right 5px
+		height 100%
+		border 1px solid rgba(99, 99, 99, .5)
+		&:nth-child(1)
+			width 100%
+			margin-bottom 10px
+		&:nth-last-child(1)
+			margin 0
+	+media(1200px)
+		float none !important
+		width 100% !important
+		img
+			width calc(25% - 10px)
+			&:nth-child(1)
+				width calc(25% - 10px)
+				margin-bottom 0
+	+media(768px)
+		img
+			width calc(50% - 10px)
+			&:nth-child(odd) 
+				display none
+	+media(480px)
+		img
+			display none
+			&:nth-child(1) 
+				display block
+				width 100%

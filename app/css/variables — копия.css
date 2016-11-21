@@ -1,0 +1,22 @@
+.image-block {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.image-block img {
+  width: 30%;
+}
+.image-block img:nth-child(1) {
+  width: 100%;
+}
+/*# sourceMappingURL=app/stylus/variables — копия.css.map */
+/*# sourceMappingURL=variables — копия.css.map */

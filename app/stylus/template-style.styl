@@ -1,8 +1,19 @@
 @import "variables.styl"
 @import "sprite.styl"
+@import "fonts.styl"
+@import "header.styl"
+@import "menu.styl"
+@import "paggination.styl"
+@import "left.styl"
+@import "public.styl"
+@import "gallery.styl"
+@import "image-block.styl"
+@import "footer.styl"
 
 body
   background lightgray
+.content
+  margin 55px 0 0 0 //TODO Fix footer
 .wrapper
   max-width 1200px
   margin 55px auto 0
@@ -29,6 +40,7 @@ h2
   font-size 25px
   color blue
   font-family "GothamProMedium"
+  margin-bottom 10px
   +media(480px)
     font-size 18px
 h3
@@ -44,10 +56,13 @@ a
   text-decoration none
 p
   font-size 14px
+  color #000
+  font-family "RobotoRegular"
+  margin-bottom 10px
+.font-white
   color #fff
-  font-family "GothamProRegular"
-.content
-  margin-top 55px
+.font-black
+  color #000
 .btn_more
   background blue
   color #fff
@@ -66,9 +81,29 @@ p
     display none
     +media(480px)
       display block
+.all
+  @extend .sitebar_a
+  padding 25px
+  &::before
+    content ""
+    width 35px
+    height 35px
+    background arrows
+    background-position arrows-next
+    display block
+    margin-bottom 10px
+    @media (max-width 960px)
+      display inline-block
+      margin -10px 10px
+.full
+  width 100%
+.large
+  width 66.66%
+.small
+  width 33.33%
 .studio
   &::after
-    content '/00A9'
+    content '\00A9'
 .clear
   clear both
 .fl
@@ -94,12 +129,3 @@ p
   q
     border 1px solid black
     padding 5px
-
-@import "fonts.styl"
-@import "header.styl"
-@import "menu.styl"
-@import "paggination.styl"
-@import "left.styl"
-@import "public.styl"
-@import "gallery.styl"
-@import "footer.styl"

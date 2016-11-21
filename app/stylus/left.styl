@@ -14,24 +14,10 @@
 		&--date
 			line-height 30px
 			color gray  
-a.sitebar_a
+.sitebar_a
 	color blue
 	line-height 25px
 	text-decoration underline //здесь поставил подчеркивание строкой, т.к. в css нет возможности, а для оформления на js нужно перевести в строку, посчитать, сколько войдет в ряд, преобразовать в n строк и им задавать border-bottom. Это дикий костыль, поэтому лучше изменить макет
 	padding 25px 0
 	font-family 'GothamProMedium'
 	font-size 18px
-.all
-	@extend a.sitebar_a
-	padding 25px
-	&::before
-		content ""
-		width 35px
-		height 35px
-		background arrows
-		background-position arrows-next
-		display block
-		margin-bottom 10px
-		@media (max-width 960px)
-			display inline-block
-			margin -10px 10px

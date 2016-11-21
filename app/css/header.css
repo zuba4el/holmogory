@@ -68,6 +68,12 @@ header .wrapper {
     display: block;
   }
 }
+.header-top_nav li a {
+  transition: animation;
+}
+.header-top_nav li a:hover {
+  color: #808080;
+}
 .header-top_phone {
   min-width: 11em;
 }
@@ -79,6 +85,8 @@ header .wrapper {
 .header-top_phone p {
   padding-top: 5px;
   font-family: "RobotoLight";
+  margin: 0;
+  color: #fff;
 }
 .header-top_phone a {
   font-size: 20px;
