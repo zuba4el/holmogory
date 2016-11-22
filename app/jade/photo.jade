@@ -10,66 +10,13 @@ block content
             h3 Публикации в СМИ
             include include.jade/paggination-years
             .photo
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-group
-                .photo-group_item 
-                  a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
-                  img(src='img/upload/1_s.jpg', alt='')
-                p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
+              - for (var x = 0; x < 12; x++)
+                .photo-group
+                  .photo-group_item 
+                    a.font-blue(href="") Лабораторный контроль УПРДОР "Холмогоры"
+                    img(src='img/upload/1_s.jpg', alt='')
+                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
+             
               
           include include.jade/paggination
   
