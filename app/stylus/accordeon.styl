@@ -1,4 +1,47 @@
 .accordeon
 	&-box
 		width 100%
-		border img-b
+		border 1px solid active
+		margin 20px 0
+		padding 33px
+		position relative
+		+media(768px)
+			padding 15px 33px 45px 33px
+		+media(480px)
+			padding 7px 15px 45px 15px
+		&--button
+			background active
+			width 155px
+			height 100%
+			position absolute
+			top 0
+			right 0
+			cursor pointer
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			+media(768px)
+				background transparent
+				width 100%
+				height 45px
+				top calc(100% - 45px)
+			.arrow
+				@extend .arrow-up
+				transition top .5s ease
+				position absolute
+				left calc(50% - 18px)
+				top calc(50% - 18px)
+				&.close
+					@extend .arrow-down
+					top calc(100% - 58px)
+					+media(480px)
+						top calc(100% - 45px)
+		&_head
+			p
+				width calc(100% - 155px)
+				+media(768px)
+					width 100%
+		
+				

@@ -13,13 +13,13 @@ $(function(){
 	$('.gallery-list--item').click(function(){
 		$(".gallery-current img").attr("src", $(this).attr("src"));
 	});
+
 	//accordeon
-	$('.accordeon').find('.accordeon-box_head').click(function(){
+	$('.accordeon').find('.accordeon-box--button').click(function(){
 	    $(this).next().stop().slideToggle();
+		$(this).children().toggleClass("close");
+		$(this).parent().toggleClass("active");		
 	}).next().stop().hide();
-	$('.accordeon-box_head').click(function(){
-	    $(this).toggleClass("js_up");
-	});
 
 });
 
