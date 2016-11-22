@@ -361,6 +361,26 @@ header .wrapper {
   color: #fff;
   font-weight: 600;
 }
+.years.paggination {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.paggination a {
+  font-family: "RobotoRegular";
+}
+.paggination-year {
+  padding: 8px 15px;
+  color: #336687;
+  transition: all 0.5s ease;
+}
+.paggination-year.active {
+  background: #cbd3d8;
+  font-weight: 600;
+}
+.paggination-year:hover {
+  background: #f3f3f3;
+}
 .sitebar {
   width: 231px;
   background: #e0e0e0;
@@ -503,22 +523,6 @@ header .wrapper {
   height: 35px;
   border-radius: 50%;
   cursor: pointer;
-}
-.paggination {
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.paggination a {
-  font-family: "RobotoRegular";
-}
-.paggination-year {
-  padding: 8px 15px;
-  color: #336687;
-}
-.paggination-year.active {
-  background: #cbd3d8;
-  font-weight: 600;
 }
 -more {
   margin-top: 65px;
@@ -918,6 +922,11 @@ p {
 }
 .small {
   width: 33.33%;
+}
+.wrap {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 .studio::after {
   content: '\00A9';
