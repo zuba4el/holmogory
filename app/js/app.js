@@ -14,3 +14,7 @@ $(function(){
 		$(".gallery-current img").attr("src", $(this).attr("src"));
 	});
 });
+
+$(document).ready(function() {
+	$('.photo-block_item').fancybox();
+});

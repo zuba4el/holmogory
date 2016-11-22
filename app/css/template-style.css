@@ -636,6 +636,31 @@ header .wrapper {
 .full .public-more--item {
   margin: 10px 0;
 }
+.photo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+.photo-block {
+  padding: 15px;
+  width: 33%;
+}
+.photo-block_item p {
+  text-align: center;
+}
+.photo-block_item img {
+  width: 100%;
+  border: 1px solid rgba(99,99,99,0.5);
+}
 .gallery {
   width: 64%;
   margin: 0 auto;
