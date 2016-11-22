@@ -784,6 +784,10 @@ header .wrapper {
     background: rgba(21,47,66,0.9) !important;
   }
 }
+.accordeon-box {
+  width: 100%;
+  border: 1px solid rgba(99,99,99,0.5);
+}
 .gallery {
   width: 64%;
   margin: 0 auto;

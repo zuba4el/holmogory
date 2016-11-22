@@ -9,52 +9,9 @@ block content
           .public-fill
             .photo
               //Нужно дублировать текст из <p> в <img title=""/> Если что, можно скрипт написать
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!') 
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, eum?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, est!
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, perferendis?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, modi.
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, eum?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, est!
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, perferendis?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, modi.
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, eum?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, est!
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, perferendis?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, modi.
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, eum?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, est!
-              .photo-block
-                a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam, perferendis?')
-                  img(src='img/upload/1_s.jpg', alt='')
-                  p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, modi.  
+              - for (var x = 0; x < 12; x++)
+                .photo-block
+                  a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!') 
+                    img(src='img/upload/1_s.jpg', alt='')
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
   include include.jade/footer.jade
