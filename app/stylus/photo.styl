@@ -6,12 +6,57 @@
 	display flex
 	flex-wrap wrap
 	justify-content space-around
-	&-block
+	&-block,
+	&-group
 		padding 15px
 		width 33%
+		+media(768px)
+			width 48%
+		+media(480px)
+			width 100%
 		&_item
+			transition animation
+			a
+				color blue
+				text-transform uppercase
+				text-decoration underline
+				transition animation
+				font-size 16px
+				font-family: "RobotoRegular"
+				&:hover
+					color blue*1.4
 			p
 				text-align center
 			img
 				width 100%
 				border img-b
+			&:hover
+				background active
+	&-group		
+		&_item
+			padding 20px
+			border 1px solid active
+			text-align center
+			img
+				border none
+				margin 10px 0
+.fancybox-opened
+	+media(480px)
+		width 100% !important
+		height auto !important
+		position fixed !important
+		left 0 !important
+		opacity 1 !important
+		overflow visible !important
+.fancybox-inner
+	+media(480px)
+		width 100% !important
+		height 100% !important
+.fancybox-close
+	+media(480px)
+		top -50px
+		right 15px
+.fancybox-overlay
+	+media(480px)
+		background rgba(21, 47, 66, .9) !important
+	
