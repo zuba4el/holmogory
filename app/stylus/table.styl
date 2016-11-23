@@ -1,0 +1,19 @@
+.tr
+	display flex
+	min-height 15px
+	flex-wrap wrap
+	+media(768px)
+		&:nth-child(1)
+			display none
+		&:nth-child(2n)
+			background active*1.2
+	.td
+		padding 10px 5px
+		width 20%
+		text-align center
+		font-size 14px
+		font-family "RobotoRegular"
+		+media(768px)
+			width 50%
+			&:nth-last-child(1)
+				width 100%

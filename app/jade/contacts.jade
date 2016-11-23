@@ -1,0 +1,71 @@
+extends include.jade/header.jade
+
+block content
+  .content
+    .wrapper
+      .public.full
+          .public-head
+              h1 Контакты
+          .public-fill
+          .map
+            img(src="img/upload/map.jpg")
+          .contact
+            p г. Вологда, 160001,Проспект Победы, 33 
+          .contact
+            p Тел. (8172) 72-37-55 факс 72-37-13
+          .contact
+            p Диспетчерская служба: Тел.: (8172) 72-36-01, (8172) 72-33-58, моб. +79315030112  
+          .contact
+            p E-mail: sevzap@vologda.ru;  dispetcher@holmogory.ru
+          .contact
+            p Контактная информация  ФКУ Упрдор "Холмогоры"
+          .clear
+          .contacts
+            .accordeon
+              - for (var x = 0; x < 14; x++)
+                .accordeon-box
+                  .accordeon-box_head Аппарат при руководстве
+                  .accordeon-box--button
+                    .arrow
+                  .accordeon-box_content
+                    .table
+                      .tr
+                        .td
+                        .td
+                        .td Внутренний телефон
+                        .td Городской телефон
+                        .td Написать  письмо
+                      .tr
+                        .td Начальник управления
+                        .td Фамилия имя отчество
+                        .td 56114
+                        .td 72-37-55
+                        .td ✉
+                      .tr
+                        .td Начальник управления
+                        .td Фамилия имя отчество
+                        .td 56114
+                        .td 72-37-55
+                        .td ✉
+                      .tr
+                        .td Начальник управления
+                        .td Фамилия имя отчество
+                        .td 56114
+                        .td 72-37-55
+                        .td ✉
+                      .tr
+                        .td Начальник управления
+                        .td Фамилия имя отчество
+                        .td 56114
+                        .td 72-37-55
+                        .td ✉
+                      .tr
+                        .td Начальник управления
+                        .td Фамилия имя отчество
+                        .td 56114
+                        .td 72-37-55
+                        .td ✉
+
+
+          
+  include include.jade/footer.jade

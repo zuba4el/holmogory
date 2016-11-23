@@ -1,0 +1,16 @@
+.table {
+  margin: 10px;
+}
+.tr {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 15px;
+}
+.tr .td {
+  padding: 10px 5px;
+  width: 20%;
+  text-align: center;
+}
+/*# sourceMappingURL=app/stylus/table.css.map */
+/*# sourceMappingURL=table.css.map */

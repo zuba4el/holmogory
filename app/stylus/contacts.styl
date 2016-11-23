@@ -1,0 +1,41 @@
+.map
+	float left
+	width 66.66%
+	margin-right 3em
+	img
+		width 100%
+	+media(1200px)
+		width 100%
+		margin 0
+		float none
+.contact
+	margin 20px 0
+	p
+		font-size 16px
+		+media(1200px)
+			text-align center
+.contacts
+	@extends .public-fill
+	margin-top 0
+	.active 
+		.accordeon-box_head
+			+media(768px)
+				padding 20px
+	.accordeon
+		&-box
+			padding 20px 45px
+			+media(768px)
+				padding 20px 0
+			&.active
+				+media(768px)
+					padding 0
+			&_head
+				font-size 20px
+				color blue
+				font-family "GothamProMedium"
+				+media(768px)
+					padding-left 20px
+			&--button
+				width 60px
+				+media(768px)
+					top calc(100% - 50px)
