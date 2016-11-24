@@ -26,3 +26,17 @@ $(function(){
 $(document).ready(function() {
 	$('.photo-block_item').fancybox();
 });
+
+$(function(){
+	if($(window).width() < 768)
+		{
+			$(".years li").replaceWith(function(index, oldHTML){
+				return $("<option>").html(oldHTML);
+			});
+			$("ul.years").replaceWith(function(index, oldHTML){
+				return $("<select>").html(oldHTML);
+			});
+		}
+});
+
+  $(window).resize(function(){});

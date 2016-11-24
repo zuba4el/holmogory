@@ -6,6 +6,8 @@
 	display flex
 	flex-wrap wrap
 	justify-content space-around
+	+media(768px)
+		margin-top 50px
 	&-block,
 	&-group
 		padding 15px
@@ -68,3 +70,29 @@
 .fancybox-overlay
 	+media(480px)
 		background rgba(21, 47, 66, .9) !important
+.js_years
+	h3
+		+media(768px)
+			display none
+	h5
+		display none
+		font-family "RobotoRegular"
+		+media(768px)
+			display block
+			width 100%
+		    position absolute
+		    background blue
+		    left 0
+		    top 114px
+		    height 27px
+		    color #fff
+		    text-align center
+		    padding 15px
+		    line-height 0
+		+media(480px)
+			top 60px
+			padding 18px
+	select
+		width 100%
+		position absolute
+		left 0

@@ -587,7 +587,7 @@ header .wrapper {
 }
 @media screen and (max-width: 480px) {
   .public {
-    padding: 10px;
+    padding: 10px 0;
   }
 }
 .public-head {
@@ -632,6 +632,7 @@ header .wrapper {
   color: #000;
   font-family: 'RobotoRegular';
   margin: 10px 0;
+  text-align: center;
 }
 .public-fill--gallery,
 .contacts--gallery {
@@ -816,6 +817,11 @@ header .wrapper {
       -ms-flex-pack: distribute;
           justify-content: space-around;
 }
+@media screen and (max-width: 768px) {
+  .photo {
+    margin-top: 50px;
+  }
+}
 .photo-block,
 .photo-group {
   padding: 15px;
@@ -914,6 +920,41 @@ header .wrapper {
   .fancybox-overlay {
     background: rgba(21,47,66,0.9) !important;
   }
+}
+@media screen and (max-width: 768px) {
+  .js_years h3 {
+    display: none;
+  }
+}
+.js_years h5 {
+  display: none;
+  font-family: "RobotoRegular";
+  position: absolute;
+  background: #336687;
+  left: 0;
+  top: 114px;
+  height: 27px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  line-height: 0;
+}
+@media screen and (max-width: 768px) {
+  .js_years h5 {
+    display: block;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .js_years h5 {
+    top: 60px;
+    padding: 18px;
+  }
+}
+.js_years select {
+  width: 100%;
+  position: absolute;
+  left: 0;
 }
 .accordeon-box {
   width: 100%;
