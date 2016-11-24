@@ -1,0 +1,43 @@
+extends include.jade/header.jade
+
+block content
+  .content
+    .wrapper
+      .public.full.maps.meteo
+          .public-head
+              h1 Список объектов сервиса
+          .public-fill
+            .maps-object
+            .maps-track
+              include ../img/svg.svg
+              p Трасса
+              select.js-custom
+                option М-8 "Холмогоры"
+                option М-8 "Холмогоры"
+                option М-8 "Холмогоры"
+            .maps-track
+              include ../img/svg.svg
+              p Участок трассы
+              select.js-custom
+                option Вологда-Череповец
+                option Вологда-Череповец
+                option Вологда-Череповец
+            .maps-track-section
+              include ../img/svg.svg
+              p Просмотр участка
+              select.js-custom
+                option 101 км
+                option 102 км
+                option 103 км
+            .maps-service
+              .maps-service--current
+                .maps-service--current_item.full
+                  img.large(src="img/upload/road.jpg", alt="")
+                  p км 1203+350 a/д Р-21 (М-18) "Кола"
+                  p.meteo Состояние погоды на 2016-09-22 12:34:32 <br>Температура воздуха: 7.4 °C <br>Влажность воздуха: 78.8 % <br> Ветер: Северо-западный, 1.4 м/с  <br> Осадки: без осадков
+                  p.meteo <b>Данные ВК на 2016-09-22 13:00:29</b>
+          .clear
+
+           
+
+  include include.jade/footer.jade

@@ -1,7 +1,8 @@
 .font-white {
   color: #fff !important;
 }
-.font-black {
+.font-black,
+p.meteo {
   color: #000 !important;
 }
 .font-blue {
@@ -15,9 +16,29 @@
 }
 .font-bold {
   font-weight: bold !important;
+  font-family: "RobotoBold" !important;
+}
+.font-normal,
+p.meteo {
+  font-weight: normal !important;
+  font-family: "RobotoRegular" !important;
+}
+.ttu {
+  text-transform: uppercase !important;
+}
+.ttn,
+p.meteo {
+  text-transform: none !important;
 }
 .tac {
   text-align: center !important;
+}
+.tal,
+p.meteo {
+  text-align: left !important;
+}
+.tar {
+  text-align: right !important;
 }
 .full {
   width: 100% !important;
@@ -32,6 +53,9 @@
   -webkit-flex-wrap: wrap !important;
       -ms-flex-wrap: wrap !important;
           flex-wrap: wrap !important;
+}
+.center {
+  margin: 0 auto;
 }
 .clear {
   clear: both !important;
@@ -1217,8 +1241,12 @@ header .wrapper {
 }
 .maps {
   background: url("../img/map.jpg");
-  background-size: 100%;
+  background-size: cover;
   padding: 56px 0 0 0;
+}
+.maps.meteo {
+  background: url("../img/map-meteo.jpg");
+  background-size: cover;
 }
 .maps svg {
   float: left;
@@ -1324,6 +1352,7 @@ header .wrapper {
   -webkit-order: 3;
       -ms-flex-order: 3;
           order: 3;
+  margin-bottom: 30px;
 }
 .maps-service--current {
   margin: 10px;
@@ -1349,6 +1378,24 @@ header .wrapper {
   text-align: center;
   color: #336687;
 }
+@media screen and (max-width: 1200px) {
+  .maps-service--current_item p {
+    font-size: 14px;
+    font-family: "RobotoRegular";
+  }
+}
+@media screen and (max-width: 768px) {
+  .maps-service--current_item p {
+    font-size: 16px;
+    font-family: "RobotoBold";
+  }
+}
+@media screen and (max-width: 480px) {
+  .maps-service--current_item p {
+    font-size: 14px;
+    font-family: "RobotoRegular";
+  }
+}
 .maps-service--current_item img {
   width: 100%;
   border: 1px solid rgba(99,99,99,0.5);
@@ -1360,7 +1407,7 @@ header .wrapper {
 }
 @media screen and (max-width: 768px) {
   .maps-service--current_item {
-    width: 30%;
+    width: 49%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1400,6 +1447,9 @@ header .wrapper {
     float: none;
     padding: 5px 0 0;
   }
+}
+img.large {
+  margin: 0 17%;
 }
 .tr {
   display: -webkit-flex;
