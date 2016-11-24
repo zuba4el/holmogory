@@ -4,16 +4,30 @@
 	margin-right 3em
 	img
 		width 100%
+		border img-b
 	+media(1200px)
 		width 100%
 		margin 0
 		float none
 .contact
 	margin 20px 0
+	position relative
+	&-wrapper
+		float right
+		+media(1200px)
+			float none
+	.no-mobile
+		+media(1200px)
+			display none
 	p
 		font-size 16px
 		+media(1200px)
 			text-align center
+	svg
+		position absolute
+		left -3em
+		+media(1200px)
+			display none
 .contacts
 	@extends .public-fill
 	margin-top 0

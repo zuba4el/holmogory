@@ -1,0 +1,55 @@
+.operative
+	.td
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+	.accordeon
+		&-box
+			padding 10px 40px
+			+media(768px)
+				padding 20px 0 40px 0
+			&.active
+				+media(768px)
+					padding 0
+				.accordeon-box_head
+					.table
+						display none
+			&_head
+				font-size 20px
+				color blue
+				font-family "GothamProMedium"
+				+media(768px)
+					padding-left 20px
+				.td
+					width 25%
+					p
+						width auto
+						text-align left
+			&_content
+				.tr
+					flex-wrap nowrap
+					+media(768px)
+						&.no-mobile
+							height 80px
+						&:nth-child(1)
+							display -webkit-flex
+							display -moz-flex
+							display -ms-flex
+							display -o-flex
+							display flex
+				.td
+					width 30%
+					margin-right 20%
+					text-align left
+					p
+						width calc(100% - 2em)
+					+media(768px)
+						width 50%
+						margin-right 0
+						&:nth-last-child(1)
+							width 50%
+					
+					

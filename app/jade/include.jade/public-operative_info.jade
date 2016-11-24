@@ -1,0 +1,57 @@
+.public
+    .public-head
+        h1 Капитальный ремонт автодорог 
+    .public-fill.operative
+      h2 Капитальный ремонт
+      .accordeon
+        - for (var x = 0; x < 6; x++)
+          .accordeon-box
+            .accordeon-box_head
+              p.font-bold М-8 "Холмогоры" Москва - Ярославль - Вологда - Архангельск км 95-256
+              .table
+                .tr
+                  .td 
+                    include ../../img/svg.svg
+                    p +15..+13
+                  .td 
+                    include ../../img/svg.svg
+                    p переменная облачность
+                  .td 
+                    include ../../img/svg.svg
+                    p ограничений движения нет
+                
+            .accordeon-box--button
+              .arrow
+            .accordeon-box_content
+              .table
+                .tr
+                  .td 
+                    include ../../img/svg.svg
+                    p Среднесуточная температура воздуха, оС
+                  .td 
+                    p +15..+13
+                .tr
+                  .td 
+                    include ../../img/svg.svg
+                    p Осадки
+                  .td 
+                    p без осадков
+                .tr
+                  .td 
+                    include ../../img/svg.svg
+                    p Состояние проезда по автомобильной дороге
+                  .td 
+                    p ограничений движения нет
+                .tr
+                  .td 
+                    include ../../img/svg.svg
+                    p Количество техники, работающей на дороге, шт
+                  .td 
+                    p 7
+                .tr
+                  .td 
+                    include ../../img/svg.svg
+                    p Выполняемые основные работы по содержанию дорог
+                  .td 
+                    p Работы по текущему содержанию автомобильных дорог и искусственных сооружений (ямочный ремонт, нанесение дорожной разметки, уборка мусора, скашивание травы в полосе отвода)
+                .tr.no-mobile
