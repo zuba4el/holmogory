@@ -3,7 +3,6 @@
 @import "sprite.styl"
 @import "fonts.styl"
 @import "header.styl"
-@import "menu.styl"
 @import "paggination.styl"
 @import "paggination-years.styl"
 @import "left.styl"
@@ -14,6 +13,7 @@
 @import "image-block.styl"
 @import "contacts.styl"
 @import "operative_info.styl"
+@import "object-service_map.styl"
 @import "table.styl"
 @import "footer.styl"
 
@@ -66,6 +66,29 @@ p
   color #000
   font-family "RobotoRegular"
   margin-bottom 10px
+select
+  width 100%
+  background darkblue
+  border 1px solid #e0e0e0
+  font-size 14px
+  color #fff
+  padding 5px 30px
+  font-family "RobotoRegular"
+  background-image url('../img/select.png')
+  background-size 21px 12px
+  background-position 97% center
+  background-repeat no-repeat
+  -moz-appearance none
+  -ms-appearance none
+  -webkit-appearance none
+  appearance none
+  option
+    background darkblue
+    color #fff
+  +media(768px)
+    border 0
+  &.down
+    background-image url('../img/select-down.png')
 .btn_more
   background blue
   color #fff

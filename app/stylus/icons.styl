@@ -1,0 +1,51 @@
+.arrows
+  display -webkit-flex
+  display -moz-flex
+  display -ms-flex
+  display -o-flex
+  display flex
+  justify-content space-between
+.arrow-prew
+  size (35px 35px)
+  background url(../img/sprite.png)
+  background-position: 0 0
+  border-radius (50%)
+  &:hover
+    @extend .arrow-prew
+    background-position-y 72px
+  &:active
+    @extend .arrow-prew
+    background-position-y 36px
+.arrow-next
+  size (35px 35px)
+  background url(../img/sprite.png)
+  background-position: 105px 0
+  border-radius (50%)
+  &:hover
+    @extend .arrow-next
+    background-position-y 72px
+  &:active
+    @extend .arrow-next
+    background-position-y 36px
+.arrow-up
+  size (35px 35px)
+  background url(../img/sprite.png)
+  background-position: 70px 0
+  border-radius (50%)
+  &:hover
+    @extend .arrow-up
+    background-position-y 72px
+  &:active
+    @extend .arrow-up
+    background-position-y 36px
+.arrow-down
+  size (35px 35px)
+  background url(../img/sprite.png)
+  background-position: 105px 0
+  border-radius (50%)
+  &:hover
+    @extend .arrow-down
+    background-position-y 72px
+  &:active
+    @extend .arrow-down
+    background-position-y 36px

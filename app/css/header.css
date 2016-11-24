@@ -95,3 +95,52 @@ header .wrapper {
   font-weight: 600;
   font-family: 'RobotoBold';
 }
+.menu-header {
+  display: flex;
+  height: 55px;
+  padding-left: 25px;
+  align-items: center;
+  cursor: pointer;
+  background: url("../img/menu-btn.png");
+}
+@media (max-width: 480px) {
+  .menu-header {
+    padding-left: 15px;
+    background-position: -17px 0;
+  }
+}
+.menu-header p {
+  margin-left: 25px;
+  font-family: "GothamProMedium";
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  .menu-header p {
+    display: none;
+  }
+}
+.menu ul {
+  background: #00008b;
+  padding: 0 0 15px;
+  margin-top: -480px;
+  transition: animation;
+}
+@media (max-width: 480px) {
+  .menu ul {
+    position: absolute;
+    width: 100%;
+  }
+}
+.menu ul.open {
+  margin: 0;
+}
+.menu ul li {
+  padding: 10px 25px;
+  min-height: 40px;
+}
+.menu ul li:hover {
+  background: #00f;
+}
+.menu ul li a {
+  font-size: 12px;
+}

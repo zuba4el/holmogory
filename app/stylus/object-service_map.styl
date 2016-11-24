@@ -1,0 +1,112 @@
+.maps
+	background url(../img/map.jpg)//Не знаю, как будет вызываться карта, поэтому сделал только визуал
+	background-size 100%
+	padding 56px 0 0 0
+	svg
+		float left
+		height 1.5em
+		path
+			fill #fff
+	p
+		color #fff
+		font-size 16px
+	.public-fill
+		display block
+		+media(768px)
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap wrap
+			margin-top 58px
+		+media(480px)
+			margin-top 4px
+.maps
+	&-object
+		float left
+		width 66.66%
+		height 500px
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+		order 2
+		+media(768px)
+			width 100%
+			float none
+		.icons
+			width 33.33%
+			position absolute
+			left 16.66%
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap wrap
+			+media(768px)
+				width 100%
+				position relative
+				left 0
+			div 
+				margin 10px
+	&-track
+		margin-bottom 20px
+		order 0
+		+media(768px)
+			margin 0
+		&-section
+			order 1
+	&-service
+		background #e0e0e0
+		float right
+		width 33.33%
+		padding 0
+		order 3
+		&--current
+			margin 10px
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			&_item
+				width 30%
+				p
+					font-family "RobotoBold"
+					text-transform uppercase
+					text-align center
+					color blue
+				img 
+					width 100%
+					border img-b
+				+media(1200px)
+					width 49%
+				+media(768px)
+					width 30%
+				+media(480px)
+					width 49%
+		+media(768px)
+			width 100%
+		li
+			text-transform uppercase
+			font-family "RobotoBold"
+			+media(768px)
+				font-family "RobotoRegular"
+				font-size 14px
+		.paggination-year
+			padding 8px 10px
+.maps-track, .maps-track-section
+	float right
+	width 33.33%
+	background blue
+	padding 20px 50px 40px
+	+media(768px)
+		width 100%
+		float none
+		padding 5px 0 0

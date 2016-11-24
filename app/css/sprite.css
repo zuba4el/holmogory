@@ -93,5 +93,39 @@
 .arrow-down:hover:active:active {
   background-position-y: 36px;
 }
+.icon {
+  size: 56px 76px;
+  background: url("../img/icons.png");
+}
+.icon.bus {
+  background-position: 0 0;
+}
+.icon.gas {
+  background-position: -56px 0;
+}
+.icon.fire {
+  background-position: -112px 0;
+}
+.icon.wash {
+  background-position: 115px 0;
+}
+.icon.parking {
+  background-position: 56px 0;
+}
+.icon.camping {
+  background-position: 0 78px;
+}
+.icon.repair {
+  background-position: -56px 79px;
+}
+.icon.hotel {
+  background-position: -112px 79px;
+}
+.icon.rest {
+  background-position: 113px 79px;
+}
+.icon.food {
+  background-position: 56px 79px;
+}
 /*# sourceMappingURL=app/stylus/sprite.css.map */
 /*# sourceMappingURL=sprite.css.map */

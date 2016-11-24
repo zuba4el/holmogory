@@ -66,3 +66,37 @@ header
 			cursor pointer
 			font-weight 600
 			font-family: 'RobotoBold'
+.menu
+  &-header
+    display: flex
+    height: 55px
+    padding-left: 25px
+    align-items center
+    cursor pointer
+    background url(../img/menu-btn.png) //layer with open
+    @media (max-width 480px)
+      padding-left 15px
+      background-position: -17px 0 
+    p
+      margin-left 25px
+      font-family "GothamProMedium"
+      font-size 16px
+      @media (max-width 480px)
+        display none
+  ul
+    background darkblue
+    padding 0 0 15px
+    margin-top: -480px
+    transition animation
+    @media (max-width 480px)
+      position absolute
+      width 100%
+    &.open
+      margin: 0
+    li
+      padding 10px 25px
+      min-height 40px
+      &:hover
+        background: blue
+      a
+        font-size 12px

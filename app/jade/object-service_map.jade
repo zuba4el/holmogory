@@ -1,0 +1,52 @@
+extends include.jade/header.jade
+
+block content
+  .content
+    .wrapper
+      .public.full.maps
+          .public-head
+              h1 Список объектов сервиса
+          .public-fill
+            .maps-object
+              .icons
+                  .icon.bus
+                  .icon.gas
+                  .icon.fire
+                  .icon.wash
+                  .icon.parking
+                  .icon.camping
+                  .icon.repair
+                  .icon.hotel
+                  .icon.rest
+                  .icon.food
+            .maps-track
+              include ../img/svg.svg
+              p Трасса
+              select.js-custom
+                option М-8 "Холмогоры"
+                option М-8 "Холмогоры"
+                option М-8 "Холмогоры"
+            .maps-track-section
+              include ../img/svg.svg
+              p Участок трассы
+              select.js-custom
+                option Вологда-Череповец
+                option Вологда-Череповец
+                option Вологда-Череповец
+            .maps-service
+              ul.paggination.years
+                a(href="#")
+                  li.paggination-year.active Все
+                each val in ["Азс", "газовые АЗС", "Автосервис", "Сто", "Автомойка", "Автовокзалы", "Автостанции", "Рынки", "Торговые комплексы", "Пункты торговли", "Мотели", "Места отдыха и площадки для стоянки", "кемпинги", "гостиницы"]
+                  a(href="#")
+                    li.paggination-year= val
+              .maps-service--current
+                - for (var x = 0; x < 6; x++)
+                  .maps-service--current_item
+                    img(src="img/upload/z1.jpg", alt="")
+                    p Лукойл
+          .clear
+
+           
+
+  include include.jade/footer.jade

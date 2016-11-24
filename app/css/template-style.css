@@ -178,6 +178,41 @@
 .accordeon-box--button .arrow.close:active {
   background-position-y: 36px;
 }
+.icon {
+  width: 56px;
+  height: 76px;
+  background: url("../img/icons.png");
+}
+.icon.bus {
+  background-position: 0 0;
+}
+.icon.gas {
+  background-position: -56px 0;
+}
+.icon.fire {
+  background-position: -112px 0;
+}
+.icon.wash {
+  background-position: 115px 0;
+}
+.icon.parking {
+  background-position: 56px 0;
+}
+.icon.camping {
+  background-position: 0 78px;
+}
+.icon.repair {
+  background-position: -56px 79px;
+}
+.icon.hotel {
+  background-position: -112px 79px;
+}
+.icon.rest {
+  background-position: 113px 79px;
+}
+.icon.food {
+  background-position: 56px 79px;
+}
 @font-face {
   font-family: "GothamProRegular";
   src: url("../fonts/GothamProRegular/GothamProRegular.eot");
@@ -1180,6 +1215,192 @@ header .wrapper {
     width: 50%;
   }
 }
+.maps {
+  background: url("../img/map.jpg");
+  background-size: 100%;
+  padding: 56px 0 0 0;
+}
+.maps svg {
+  float: left;
+  height: 1.5em;
+}
+.maps svg path {
+  fill: #fff;
+}
+.maps p {
+  color: #fff;
+  font-size: 16px;
+}
+.maps .public-fill {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .maps .public-fill {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-top: 58px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .maps .public-fill {
+    margin-top: 4px;
+  }
+}
+.maps-object {
+  float: left;
+  width: 66.66%;
+  height: 500px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+}
+@media screen and (max-width: 768px) {
+  .maps-object {
+    width: 100%;
+    float: none;
+  }
+}
+.maps-object .icons {
+  width: 33.33%;
+  position: absolute;
+  left: 16.66%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .maps-object .icons {
+    width: 100%;
+    position: relative;
+    left: 0;
+  }
+}
+.maps-object .icons div {
+  margin: 10px;
+}
+.maps-track {
+  margin-bottom: 20px;
+  -webkit-order: 0;
+      -ms-flex-order: 0;
+          order: 0;
+}
+@media screen and (max-width: 768px) {
+  .maps-track {
+    margin: 0;
+  }
+}
+.maps-track-section {
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.maps-service {
+  background: #e0e0e0;
+  float: right;
+  width: 33.33%;
+  padding: 0;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+}
+.maps-service--current {
+  margin: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.maps-service--current_item {
+  width: 30%;
+}
+.maps-service--current_item p {
+  font-family: "RobotoBold";
+  text-transform: uppercase;
+  text-align: center;
+  color: #336687;
+}
+.maps-service--current_item img {
+  width: 100%;
+  border: 1px solid rgba(99,99,99,0.5);
+}
+@media screen and (max-width: 1200px) {
+  .maps-service--current_item {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .maps-service--current_item {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .maps-service--current_item {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .maps-service {
+    width: 100%;
+  }
+}
+.maps-service li {
+  text-transform: uppercase;
+  font-family: "RobotoBold";
+}
+@media screen and (max-width: 768px) {
+  .maps-service li {
+    font-family: "RobotoRegular";
+    font-size: 14px;
+  }
+}
+.maps-service .paggination-year {
+  padding: 8px 10px;
+}
+.maps-track,
+.maps-track-section {
+  float: right;
+  width: 33.33%;
+  background: #336687;
+  padding: 20px 50px 40px;
+}
+@media screen and (max-width: 768px) {
+  .maps-track,
+  .maps-track-section {
+    width: 100%;
+    float: none;
+    padding: 5px 0 0;
+  }
+}
 .tr {
   display: -webkit-flex;
   display: -moz-flex;
@@ -1335,6 +1556,35 @@ p {
   color: #000;
   font-family: "RobotoRegular";
   margin-bottom: 10px;
+}
+select {
+  width: 100%;
+  background: #1f3d52;
+  border: 1px solid #e0e0e0;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px 30px;
+  font-family: "RobotoRegular";
+  background-image: url("../img/select.png");
+  background-size: 21px 12px;
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+select option {
+  background: #1f3d52;
+  color: #fff;
+}
+@media screen and (max-width: 768px) {
+  select {
+    border: 0;
+  }
+}
+select.down {
+  background-image: url("../img/select-down.png");
 }
 .btn_more {
   background: #336687;
