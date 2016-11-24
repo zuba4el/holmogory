@@ -799,6 +799,22 @@ header .wrapper {
   border: none;
   margin: 10px 0;
 }
+.photo .btn_more {
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .photo .btn_more {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .photo .btn_more {
+    width: 90%;
+  }
+}
 @media screen and (max-width: 480px) {
   .fancybox-opened {
     width: 100% !important;
