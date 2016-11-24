@@ -81,9 +81,23 @@
 				//&:hover
 					//@extend .owl-next
 					//background-position: 105px 36px
+			.owl-item
+				&.active
+					background transparent
+	
+	.pagginaton
+		@media (max-width 480px)
+			display none
+	&.full
+		width 100%
+		.public
+			&-more
+				&--item
+					margin 10px 0 //TODO fix this
+.public
 	&-more
 		margin-top 65px
-		+media(768px)
+		@media (max-width 768px)
 			margin 0
 			h2
 				margin 20px 0
@@ -98,23 +112,23 @@
 			.head
 				font-weight 600
 				display block
-			+media(768px)
+			@media (max-width 768px)
 				border 0
 				padding 0
 				margin 0
 				min-height 220px
-			+media(480px)
+			@media (max-width 480px)
 				min-height 150px
 			&:hover
 				background more-item
-				+media(768px)
+				@media (max-width 768px)
 					background transparent
 			&--img
 				float left
 				margin-right 35px
-				+media(768px)
+				@media (max-width 768px)
 					margin-right 5px
-				+media(768px)
+				@media (max-width 768px)
 					width 50%
 			&--date
 				font-family "RobotoRegular"
@@ -122,32 +136,31 @@
 				font-size 14px
 				font-weight 600
 				padding 0 0 10px
-				+media(768px)
+				@media (max-width 768px)
 					display none
 			&_text
 				font-size 14px
 				font-family "RobotoRegular"
 				padding 10px 0
-				+media(768px)
+				@media (max-width 768px)
 					font-size 0
 					.head
 						font-size 14px
-						+media(480px)
+						@media (max-width 480px)
 							font-size 12px					
 		.btn_more
 			position absolute
 			right 20px
 			bottom 20px
-			+media(1200px) 
+			@media (max-width: 1200px) 
 				position relative
 				right 0
 				bottom 0
-		.arrows
-			+media(480px)
-				display none
+				@media (max-width 768px)
+					display non
 	&.full
 		width 100%
 		.public
 			&-more
 				&--item
-					margin 10px 0 //TODO fix this
+					margin 10px 0 //TODO fix this	

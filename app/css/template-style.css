@@ -119,7 +119,7 @@ p.meteo {
   width: 35px;
   height: 35px;
   background: url("../img/sprite.png");
-  background-position: 105px 0;
+  background-position: 140px 0;
   border-radius: 50%;
 }
 .arrow-next:hover,
@@ -676,18 +676,32 @@ header .wrapper {
   border-radius: 50%;
   cursor: pointer;
 }
--more {
+.public .owl-item.active {
+  background: transparent;
+}
+@media (max-width: 480px) {
+  .pagginaton {
+    display: none;
+  }
+}
+.full {
+  width: 100%;
+}
+.full .public-more--item {
+  margin: 10px 0;
+}
+.public-more {
   margin-top: 65px;
 }
-@media screen and (max-width: 768px) {
-  -more {
+@media (max-width: 768px) {
+  .public-more {
     margin: 0;
   }
-  -more h2 {
+  .public-more h2 {
     margin: 20px 0;
   }
 }
--more--item {
+.public-more--item {
   border: 2px solid #dedede;
   clear: both;
   margin: 35px 0;
@@ -696,96 +710,96 @@ header .wrapper {
   position: relative;
   transition: all 0.5s ease;
 }
--more--item .head {
+.public-more--item .head {
   font-weight: 600;
   display: block;
 }
-@media screen and (max-width: 768px) {
-  -more--item {
+@media (max-width: 768px) {
+  .public-more--item {
     border: 0;
     padding: 0;
     margin: 0;
     min-height: 220px;
   }
 }
-@media screen and (max-width: 480px) {
-  -more--item {
+@media (max-width: 480px) {
+  .public-more--item {
     min-height: 150px;
   }
 }
--more--item:hover {
+.public-more--item:hover {
   background: #dedede;
 }
-@media screen and (max-width: 768px) {
-  -more--item:hover {
+@media (max-width: 768px) {
+  .public-more--item:hover {
     background: transparent;
   }
 }
--more--item--img {
+.public-more--item--img {
   float: left;
   margin-right: 35px;
 }
-@media screen and (max-width: 768px) {
-  -more--item--img {
+@media (max-width: 768px) {
+  .public-more--item--img {
     margin-right: 5px;
   }
 }
-@media screen and (max-width: 768px) {
-  -more--item--img {
+@media (max-width: 768px) {
+  .public-more--item--img {
     width: 50%;
   }
 }
--more--item--date {
+.public-more--item--date {
   font-family: "RobotoRegular";
   color: #336687;
   font-size: 14px;
   font-weight: 600;
   padding: 0 0 10px;
 }
-@media screen and (max-width: 768px) {
-  -more--item--date {
+@media (max-width: 768px) {
+  .public-more--item--date {
     display: none;
   }
 }
--more--item_text {
+.public-more--item_text {
   font-size: 14px;
   font-family: "RobotoRegular";
   padding: 10px 0;
 }
-@media screen and (max-width: 768px) {
-  -more--item_text {
+@media (max-width: 768px) {
+  .public-more--item_text {
     font-size: 0;
   }
-  -more--item_text .head {
+  .public-more--item_text .head {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 480px) {
-  -more--item_text .head {
+@media (max-width: 768px) and (max-width: 480px) {
+  .public-more--item_text .head {
     font-size: 12px;
   }
 }
--more .btn_more {
+.public-more .btn_more {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
-@media screen and (max-width: 1200px) {
-  -more .btn_more {
+@media (max-width: 1200px) {
+  .public-more .btn_more {
     position: relative;
     right: 0;
     bottom: 0;
   }
 }
-@media screen and (max-width: 480px) {
-  -more .arrows {
-    display: none;
+@media (max-width: 1200px) and (max-width: 768px) {
+  .public-more .btn_more {
+    display: non;
   }
 }
-.full {
+.public.full {
   width: 100%;
 }
-.full .public-more--item {
+.public.full .public-more--item {
   margin: 10px 0;
 }
 .photo {
