@@ -34,7 +34,6 @@ block content
                 option Вологда-Череповец
                 option Вологда-Череповец
             .maps-service.js_years
-              h5.mobile Выбрать год
               ul.paggination.years
                 a(href="#")
                   li.paggination-year.active Все
@@ -42,6 +41,7 @@ block content
                   a(href="#")
                     li.paggination-year= val
               .maps-service--current
+                h4 Выбрать год
                 - for (var x = 0; x < 6; x++)
                   .maps-service--current_item
                     img(src="img/upload/z1.jpg", alt="")

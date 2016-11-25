@@ -28,7 +28,7 @@ $(document).ready(function() {
 });
 
 $(function(){
-	if($(window).width() < 768)
+	if($(window).width() < 769)
 		{
 			$(".years li").replaceWith(function(index, oldHTML){
 				return $("<option>").html(oldHTML);

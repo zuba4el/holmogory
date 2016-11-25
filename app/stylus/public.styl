@@ -164,4 +164,32 @@
 		.public
 			&-more
 				&--item
-					margin 10px 0 //TODO fix this	
+					margin 10px 0
+.js_select
+	margin-top 100px
+	h5
+		display none
+		font-family "RobotoRegular"
+		+media(768px)
+			display block
+			width 100%
+			z-index 1
+		    position absolute
+		    background blue
+		    left 0
+		    top 114px
+		    height 27px
+		    color #fff
+		    text-align center
+		    padding 15px
+		    line-height 0
+		+media(480px)
+			top 60px
+			padding 18px
+	select
+		position absolute
+		left 0
+		margin-top -10px
+		box-shadow 0 -25px 0 10px blue
+		text-align center
+		cursor pointer

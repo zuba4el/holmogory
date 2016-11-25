@@ -803,6 +803,43 @@ header .wrapper {
 .public.full .public-more--item {
   margin: 10px 0;
 }
+.js_select {
+  margin-top: 100px;
+}
+.js_select h5 {
+  display: none;
+  font-family: "RobotoRegular";
+  position: absolute;
+  background: #336687;
+  left: 0;
+  top: 114px;
+  height: 27px;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  line-height: 0;
+}
+@media screen and (max-width: 768px) {
+  .js_select h5 {
+    display: block;
+    width: 100%;
+    z-index: 1;
+  }
+}
+@media screen and (max-width: 480px) {
+  .js_select h5 {
+    top: 60px;
+    padding: 18px;
+  }
+}
+.js_select select {
+  position: absolute;
+  left: 0;
+  margin-top: -10px;
+  box-shadow: 0 -25px 0 10px #336687;
+  text-align: center;
+  cursor: pointer;
+}
 .photo {
   display: -webkit-flex;
   display: -moz-flex;
@@ -859,6 +896,12 @@ header .wrapper {
 .photo-block_item p,
 .photo-group_item p {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .photo-block_item p,
+  .photo-group_item p {
+    display: none;
+  }
 }
 .photo-block_item img,
 .photo-group_item img {
@@ -930,14 +973,14 @@ header .wrapper {
   display: none;
   font-family: "RobotoRegular";
   position: absolute;
-  background: #336687;
   left: 0;
   top: 114px;
   height: 27px;
   color: #fff;
   text-align: center;
-  padding: 15px;
+  padding: 10px 15px;
   line-height: 0;
+  z-index: 1;
 }
 @media screen and (max-width: 768px) {
   .js_years h5 {
@@ -955,6 +998,9 @@ header .wrapper {
   width: 100%;
   position: absolute;
   left: 0;
+  box-shadow: 0 -25px 0 10px #336687;
+  text-align: center;
+  cursor: pointer;
 }
 .accordeon-box {
   width: 100%;
@@ -1423,6 +1469,25 @@ header .wrapper {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .maps-service--current {
+    margin: 35px 10px;
+  }
+}
+.maps-service--current h4 {
+  display: none;
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  top: -60px;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .maps-service--current h4 {
+    display: block;
+  }
 }
 .maps-service--current_item {
   width: 30%;

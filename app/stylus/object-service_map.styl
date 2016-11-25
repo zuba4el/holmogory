@@ -79,6 +79,18 @@
 			display flex
 			flex-wrap wrap
 			justify-content space-between
+			position relative
+			+media(768px)
+				margin 35px 10px
+			h4 //insert to box-shadow select
+				display none
+				width 100%
+				color #fff
+				position absolute
+				top -60px
+				text-align center
+				+media(768px)
+					display block
 			&_item
 				width 30%
 				p
