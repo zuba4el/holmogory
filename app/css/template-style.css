@@ -237,6 +237,20 @@ p.meteo {
 .icon.food {
   background-position: 56px 79px;
 }
+.up {
+  display: none;
+  width: 38px;
+  height: 38px;
+  background: url("../img/footer_up.png");
+  position: absolute;
+  right: 25px;
+  bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .up {
+    display: block;
+  }
+}
 @font-face {
   font-family: "GothamProRegular";
   src: url("../fonts/GothamProRegular/GothamProRegular.eot");
@@ -580,9 +594,19 @@ header .wrapper {
   font-family: 'GothamProMedium';
   min-height: 100vh;
 }
+@media screen and (max-width: 768px) {
+  .public.static {
+    padding: 10px;
+  }
+}
 @media screen and (max-width: 960px) {
   .public {
     width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .public {
+    padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -839,6 +863,11 @@ header .wrapper {
   box-shadow: 0 -25px 0 10px #336687;
   text-align: center;
   cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .arrows.no-mobile {
+    display: none;
+  }
 }
 .photo {
   display: -webkit-flex;
@@ -1614,7 +1643,7 @@ footer {
   font-family: "GothamProRegular";
   font-size: 14px;
 }
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   footer {
     padding: 0 10px;
   }
@@ -1636,7 +1665,7 @@ footer .wrapper {
   color: #fff;
   box-shadow: none;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   footer .wrapper {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -1647,7 +1676,7 @@ footer div {
   height: 55px;
   line-height: 55px;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   footer div {
     line-height: 25px;
   }

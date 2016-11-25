@@ -13,8 +13,13 @@
 	padding 56px 56px 30px
 	font-family 'GothamProMedium'
 	min-height 100vh
+	&.static
+		+media(768px)
+			padding 10px
 	+media(960px)
 		width 100%
+	+media(768px)
+		padding-bottom 50px
 	+media(480px)
 		padding 10px 0
 	&-head
@@ -193,3 +198,6 @@
 		box-shadow 0 -25px 0 10px blue
 		text-align center
 		cursor pointer
+.arrows.no-mobile
+	+media(480px)
+		display none
