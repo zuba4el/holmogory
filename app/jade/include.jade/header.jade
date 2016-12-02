@@ -9,25 +9,34 @@ head
   link(rel='stylesheet', href='css/template-style.css')
 body
   header
-    .wrapper
+      .header-upper
+        .wrapper
+          .header-upper--logo
+            img(src="img/rosautodor.png", alt="")
+          .header-upper--description
+            p.font-white <span class="font-bold">ФКУ УПРДОР "ХОЛМОГОРЫ"</span><br> хорошие дороги-хорошим водителям!
+          .header-upper--search
+            input(type="text" placeholder="Поиск...")
+            button.btn_more Найти
       .header-top
-        .header-top_menu
-          include menu.jade
-        ul.header-top_nav
-          li
-            a(href="index.html") 
-              img(src="img/logo.png", alt="logo")
-          li
-            a(href="#") Об управлении
-          li
-            a(href="#") Публикации в СМИ
-          li
-            a(href="#") Фотогалерея
-          li
-            a(href="#") Важно
-          li
-            a(href="#") Росавтодор
-        .header-top_phone
-          P телефон для связи:
-          a(tel="+7(8172)72-37-55") +7(8172)72-37-55
+        .wrapper
+          .header-top_menu
+            include menu.jade
+          ul.header-top_nav
+            li
+              a(href="index.html") 
+                img(src="img/logo.png", alt="logo")
+            li
+              a(href="#") Об управлении
+            li
+              a(href="#") Публикации в СМИ
+            li
+              a(href="#") Фотогалерея
+            li
+              a(href="#") Важно
+            li
+              a(href="#") Росавтодор
+          .header-top_phone
+            P телефон для связи:
+            a(tel="+7(8172)72-37-55") +7(8172)72-37-55
   block content          

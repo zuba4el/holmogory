@@ -39,4 +39,14 @@ $(function(){
 		}
 });
 
-  $(window).resize(function(){});
+$(document).ready(function(){
+	$("body").removeClass("min");
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			console.log(123)
+			$("body").addClass("min").fadeIn;
+		} else {
+			$("body").removeClass("min").fadeIn;
+		};
+	});
+});
