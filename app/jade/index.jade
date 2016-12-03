@@ -2,7 +2,61 @@ extends include.jade/header
 
 block content
   .content
-      .wrapper.pub
-        include include.jade/left
-        include include.jade/public
+      .public.full
+          .public-head.full
+              .logo_index
+                img(src="img/logo_big.png", alt="")
+                h1.font-white.tal <span class="font-bold">ФКУ УПРДОР "ХОЛМОГОРЫ"</span><br>Хорошие дороги - хорошим водителям!
+              a(href="#scroll").to-down.font-white листать вниз
+          .wrapper.pub
+            .public-fill.index
+              #scroll
+              .shadow
+                h2 Обеспечение качества дорог
+                p.font-black Упрдор «Холмогоры» проводит целенаправленную работу контроля качества всех видов работ, выполняемых на вверенных автодорогах. Информация о деятельности испытательной лаборатории Управления, сведения о лабораторном оборудовании и о средствах измерения, в том числе привлекаемых на договорной основе можно посмотреть на сайте.
+                a(href="#")
+                  .more.opacity
+                    p Подробнее
+                    .arrow-next
+              .shadow
+                h2 Перевозка КГ и ТВ грузов
+                p.font-black Перечень объектов, включённых в программу дорожных работ «Развитие транспортной системы России (2013-2017 годы), финансируемых за счет средств Федерального дорожного фонда, по ФКУ Упрдор «Холмогоры» на 2016 год с вводом объектов по годам реализации.
+                a(href="#")
+                  .more.opacity
+                    p Подробнее
+                    .arrow-next
+              .index-block
+                .index-block_description
+                  h3 Состояние автодорог
+                  p.tal.font-white Перечень объектов, включённых в программу дорожных работ «Развитие транспортной системы России (2013-2017 годы), финансируемых за счет средств Федерального дорожного фонда, по ФКУ Упрдор «Холмогоры» на 2016 год с вводом объектов по годам реализации.
+                  button.btn_more Узнать подробнее
+                .index-block_buttons
+                  .index-block_buttons__item
+                    a(href="#")
+                      include ../img/svg.svg
+                      p.font-white Метео <br>и видео контроль
+                  .index-block_buttons__item
+                    a(href="#")
+                      include ../img/svg.svg
+                      p.font-white Оперативная <br>информация
+                  .index-block_buttons__item
+                    a(href="#")
+                      include ../img/svg.svg
+                      p.font-white Ограничения <br>движения
+              .index-social
+                a(href="#").index-social_item.twitter
+                  p.opacity Мы в твиттере
+                a(href="#").index-social_item.ok
+                  p.opacity Мы в твиттере
+                a(href="#").index-social_item.vk
+                  p.opacity Мы в твиттере
+                a(href="#").index-social_item.facebook
+                  p.opacity Мы в твиттере
+              .shadow
+                h2 <span class="super">1567</span> <br> <span class="medium">созданых обращений</span>
+                .shadow-info
+                  h4 Работа онлайн приемной
+                  p Работа онлайн приемной осуществляется с 2004 года и откликается на все просьбы, жалобы, а так же отвечает на все заданные вопросы
+                  button.btn_more Узнать подробнее
+
   include include.jade/footer

@@ -25,13 +25,27 @@ header .wrapper {
 .header-upper--search {
   width: 33.33%;
   text-align: center;
+media(1200px)
 }
-.header-upper--description p {
+.header-upper--logo p,
+.header-upper--description p,
+.header-upper--search p {
   font-size: 100%;
   line-height: 1.5;
 }
+.header-upper--logo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+media(480px)
+}
 .header-upper--search {
   text-align: right;
+media(768px)
 }
 .header-upper--search input {
   border-radius: 20px;
@@ -39,6 +53,7 @@ header .wrapper {
   border: 0;
   padding: 5px 20px;
   box-sizing: border-box;
+media(480px)
 }
 .header-upper--search button {
   background: #00f;

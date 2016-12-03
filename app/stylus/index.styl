@@ -1,0 +1,177 @@
+.index
+	padding-top: 59vh
+	&-block
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		background blue
+		box-shadow 0 0 100px 00px darkblue inset
+		&_description
+			width 65%
+			padding 60px 100px
+			h3
+				font-family "GothamProMedium"
+				color #fff
+				text-transform none
+				font-size 34px //why?
+			p
+				font-family "GothamProRegular"
+				font-size 16px
+			button.btn_more
+				background #4b7b9b
+				margin 10px
+		&_buttons
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			flex-direction column
+			justify-content space-around
+			padding 10px 0
+			&__item
+				a
+					display -webkit-flex
+					display -moz-flex
+					display -ms-flex
+					display -o-flex
+					display flex
+					align-items center
+					font-size 16px
+					p
+						font-size 22px
+						text-align left
+		svg	
+			padding 15px
+			background lightblue
+			border-radius 5px
+			margin-right 10px
+			size (77px 77px)
+			path
+				fill white
+	&-social
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-wrap wrap
+		&_item
+			width 25%
+			transition animation
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			align-items center
+			justify-content center
+			p
+				font-size 14px
+				transition animation
+				color #ccc
+		.twitter
+			background #1da1f2 url('../img/twitter.png') no-repeat center center
+			background-size 20% 90%
+			&:hover
+				box-shadow 0 0 0px 3px #1da1f2
+				z-index 1
+				background-position: 10% center
+		.ok
+			background #f6882e url('../img/ok.png') no-repeat center center
+			background-size 20% 90%
+			&:hover
+				box-shadow 0 0 0px 3px #f6882e
+				z-index 1
+				background-position: 10% center
+		.vk
+			background #507299 url('../img/vk.png') no-repeat center center
+			background-size 20% 90%
+			&:hover
+				box-shadow 0 0 0px 3px #507299
+				z-index 1
+				background-position: 10% center
+		.facebook
+			background #3d5a98 url('../img/facebook.png') no-repeat center center
+			background-size 20% 90%
+			&:hover
+				box-shadow 0 0 0px 3px #3d5a98
+				z-index 1
+				background-position: 10% center
+.logo_index
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content flex-start
+	align-items center
+	img
+		margin-right 1em
+.to-down
+	position fixed
+	left calc(50% - 6em)
+	top 90vh
+	text-transform uppercase
+	font-family "Gotham Pro"
+	font-size 16px
+	text-transform uppercase
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	align-items center
+	&::before
+		content ''
+		display block
+		size (20px 32px)
+		background url('../img/down.png')
+		margin-right 5px
+.shadow
+	width 100%
+	padding 45px 36px
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	transition animation
+	align-items center
+	justify-content flex-end
+	flex-wrap wrap
+	&:hover
+		box-shadow 0px 0px 5px 2px active
+	h2
+		width 35%
+		text-align left
+		padding 0 10% 0 0
+	p
+		width 65%
+		text-align left
+		font-family 'RobotoLight'
+		font-size 16px
+		line-height 1.5
+	&-info
+		width 65%
+	.more
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		transition animation
+		p
+			font-size 16px
+			font-family "GothamProMedium"
+			color blue
+			margin-right 10px
+			line-height 1
+.super
+	font-size 60px
+	font-family "Gotham Pro"
+	font-weight 600
+.medium
+	font-size 24px

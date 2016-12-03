@@ -21,18 +21,39 @@ header
 .header-upper--logo, .header-upper--description, .header-upper--search
 	width 33.33%
 	text-align center
-.header-upper--description
 	p
 		font-size 100%
 		line-height 1.5
+	+media(1200px)
+		width 50%
+.header-upper--logo
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content flex-start
+	align-items center
+	+media(480px)
+		width 10%
+	p
+		+media(768px)
+			display none
+.header-upper--description
+	+media(1200px)
+		display none
 .header-upper--search
 	text-align right
+	+media(768px)
+		width 90%
 	input
 		border-radius 20px
 		height 25px
 		border 0
 		padding 5px 20px
 		box-sizing border-box
+		+media(480px)
+			max-width 150px
 	button
 		background blue*1.2
 		border-radius 20px

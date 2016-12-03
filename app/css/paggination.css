@@ -1,0 +1,43 @@
+.paggination {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0;
+}
+.paggination a {
+  color: #000;
+  font-family: "RobotoLight";
+  padding: 0 10px;
+  font-size: 16px;
+}
+.paggination .page.number {
+  size: 35px 35px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 3px;
+}
+.paggination .page.number:hover {
+  background: active;
+}
+.paggination .page.active {
+  background: #00f;
+}
+.paggination .page.active a {
+  color: #fff;
+  font-weight: 600;
+}
+/*# sourceMappingURL=app/stylus/paggination.css.map */
+/*# sourceMappingURL=paggination.css.map */

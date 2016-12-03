@@ -1,0 +1,30 @@
+.sitebar {
+  width: 231px;
+  background: #d3d3d3;
+  font-family: 'GothamProMedium';
+  font-size: 18px;
+}
+@media (max-width: 960px) {
+  .sitebar {
+    width: 100%;
+  }
+}
+.sitebar-item {
+  padding: 20px 30px;
+}
+.sitebar-item_active {
+  background: active;
+  padding: 20px 30px;
+}
+.sitebar-item--date {
+  line-height: 30px;
+  color: #808080;
+}
+.sitebar_a {
+  color: #00f;
+  line-height: 25px;
+  text-decoration: underline;
+  padding: 25px 0;
+  font-family: 'GothamProMedium';
+  font-size: 18px;
+}

@@ -1,0 +1,52 @@
+.gallery {
+  width: 64%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .gallery {
+    width: 90%;
+  }
+}
+.gallery-current {
+  width: calc(100% - 2%);
+  margin-bottom: 10px;
+}
+.gallery-current--item {
+  width: 100%;
+}
+.gallery-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .gallery-list {
+    display: none;
+  }
+}
+.gallery-list--item {
+  width: 95%;
+}
+.gallery-list .paggination {
+  position: absolute;
+  width: 120%;
+  top: calc(50% - 17px);
+  left: -10%;
+  height: 0;
+}
+.owl-stage {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=app/stylus/gallery.css.map */
+/*# sourceMappingURL=gallery.css.map */

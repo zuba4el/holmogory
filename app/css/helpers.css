@@ -1,0 +1,69 @@
+.font-white {
+  color: #fff !important;
+}
+.font-black {
+  color: #000 !important;
+}
+.font-blue {
+  color: #00f !important;
+}
+.font-darkblue {
+  color: #00008b !important;
+}
+.font-active {
+  color: active !important;
+}
+.font-bold {
+  font-weight: bold !important;
+  font-family: "RobotoBold" !important;
+}
+.font-normal {
+  font-weight: normal !important;
+  font-family: "RobotoRegular" !important;
+}
+.ttu {
+  text-transform: uppercase !important;
+}
+.ttn {
+  text-transform: none !important;
+}
+.tac {
+  text-align: center !important;
+}
+.tal {
+  text-align: left !important;
+}
+.tar {
+  text-align: right !important;
+}
+.full {
+  width: 100% !important;
+}
+.large {
+  width: 66.66% !important;
+}
+.small {
+  width: 33.33% !important;
+}
+.wrap {
+  -webkit-flex-wrap: wrap !important;
+      -ms-flex-wrap: wrap !important;
+          flex-wrap: wrap !important;
+}
+.center {
+  margin: 0 auto;
+}
+.clear {
+  clear: both !important;
+}
+.fl {
+  float: left !important;
+}
+.fr {
+  float: right !important;
+}
+.active {
+  background: active;
+}
+/*# sourceMappingURL=app/stylus/helpers.css.map */
+/*# sourceMappingURL=helpers.css.map */

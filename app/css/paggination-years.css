@@ -1,0 +1,24 @@
+.years.paggination {
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.paggination a {
+  font-family: "RobotoRegular";
+}
+.paggination-year {
+  padding: 8px 15px;
+  color: #00f;
+  transition: -webkit-animation;
+  transition: animation;
+  transition: animation, -webkit-animation;
+}
+.paggination-year.active {
+  background: active;
+  font-weight: 600;
+}
+.paggination-year:hover {
+  background: #bfbfbf;
+}
+/*# sourceMappingURL=app/stylus/paggination-years.css.map */
+/*# sourceMappingURL=paggination-years.css.map */

@@ -1,0 +1,97 @@
+.arrows {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.arrow-prew,
+.arrow-prew:hover,
+.arrow-prew:active,
+.arrow-prew:hover:active {
+  size: 35px 35px;
+  background: url("../img/sprite.png");
+  background-position: 0 0;
+  border-radius: 50%;
+}
+.arrow-prew:hover,
+.arrow-prew:hover:hover,
+.arrow-prew:active:hover,
+.arrow-prew:hover:active:hover {
+  background-position-y: 72px;
+}
+.arrow-prew:active,
+.arrow-prew:hover:active,
+.arrow-prew:active:active,
+.arrow-prew:hover:active:active {
+  background-position-y: 36px;
+}
+.arrow-next,
+.arrow-next:hover,
+.arrow-next:active,
+.arrow-next:hover:active {
+  size: 35px 35px;
+  background: url("../img/sprite.png");
+  background-position: 105px 0;
+  border-radius: 50%;
+}
+.arrow-next:hover,
+.arrow-next:hover:hover,
+.arrow-next:active:hover,
+.arrow-next:hover:active:hover {
+  background-position-y: 72px;
+}
+.arrow-next:active,
+.arrow-next:hover:active,
+.arrow-next:active:active,
+.arrow-next:hover:active:active {
+  background-position-y: 36px;
+}
+.arrow-up,
+.arrow-up:hover,
+.arrow-up:active,
+.arrow-up:hover:active {
+  size: 35px 35px;
+  background: url("../img/sprite.png");
+  background-position: 70px 0;
+  border-radius: 50%;
+}
+.arrow-up:hover,
+.arrow-up:hover:hover,
+.arrow-up:active:hover,
+.arrow-up:hover:active:hover {
+  background-position-y: 72px;
+}
+.arrow-up:active,
+.arrow-up:hover:active,
+.arrow-up:active:active,
+.arrow-up:hover:active:active {
+  background-position-y: 36px;
+}
+.arrow-down,
+.arrow-down:hover,
+.arrow-down:active,
+.arrow-down:hover:active {
+  size: 35px 35px;
+  background: url("../img/sprite.png");
+  background-position: 105px 0;
+  border-radius: 50%;
+}
+.arrow-down:hover,
+.arrow-down:hover:hover,
+.arrow-down:active:hover,
+.arrow-down:hover:active:hover {
+  background-position-y: 72px;
+}
+.arrow-down:active,
+.arrow-down:hover:active,
+.arrow-down:active:active,
+.arrow-down:hover:active:active {
+  background-position-y: 36px;
+}
+/*# sourceMappingURL=app/stylus/icons.css.map */
+/*# sourceMappingURL=icons.css.map */
