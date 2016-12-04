@@ -1,5 +1,15 @@
+.full
+	&.min-mobile
+		+media(960px)
+			padding 56px 0px 30px
+		h1
+			text-align left
+			+media(480px)
+				text-align center
+				margin 10px
+		
 .index
-	padding-top: 65vh
+	padding-top calc(100vh - 290px)
 	&-block
 		display -webkit-flex
 		display -moz-flex
@@ -11,6 +21,10 @@
 		&_description
 			width 65%
 			padding 60px 100px
+			+media(768px)
+				padding 20px
+			+media(480px)
+				width 100%
 			h3
 				font-family "GothamProMedium"
 				color #fff
@@ -31,6 +45,8 @@
 			flex-direction column
 			justify-content space-around
 			padding 10px 0
+			+media(480px)
+				display none
 			&__item
 				a
 					display -webkit-flex
@@ -43,14 +59,22 @@
 					p
 						font-size 22px
 						text-align left
+						+media(640px)
+							font-size 16px
 		svg	
 			padding 15px
 			background lightblue
 			border-radius 5px
 			margin-right 10px
 			size (77px 77px)
+			+media(768px)
+				display none
 			path
+				transition animation
 				fill white
+			&:hover
+				path
+					fill active
 	&-social
 		display -webkit-flex
 		display -moz-flex
@@ -68,6 +92,8 @@
 			display flex
 			align-items center
 			justify-content center
+			+media(480px)
+				width 50%
 			p
 				font-size 14px
 				transition animation
@@ -108,8 +134,13 @@
 	display flex
 	justify-content flex-start
 	align-items center
+	+media(480px)
+		flex-direction column
+		justify-content space-around
 	img
 		margin-right 1em
+		+media(480px)
+			margin 0
 .to-down
 	position fixed
 	left calc(50% - 6em)
@@ -142,20 +173,30 @@
 	align-items center
 	justify-content flex-end
 	flex-wrap wrap
+	+media(960px)
+		flex-direction column
+		a
+			width 100%
 	&:hover
 		box-shadow 0px 0px 5px 2px active
 	h2
 		width 35%
 		text-align left
 		padding 0 10% 0 0
+		+media(960px)
+			width 100%
 	p
 		width 65%
 		text-align left
 		font-family 'RobotoLight'
 		font-size 16px
 		line-height 1.5
+		+media(960px)
+			width 100%
 	&-info
 		width 65%
+		+media(960px)
+			width 100%
 	.more
 		display -webkit-flex
 		display -moz-flex
@@ -163,25 +204,91 @@
 		display -o-flex
 		display flex
 		transition animation
+		opacity 1 !important
 		p
 			font-size 16px
 			font-family "GothamProMedium"
 			color blue
 			margin-right 10px
 			line-height 1
+			+media(960px)
+				width 6em
 .super
 	font-size 60px
 	font-family "Gotham Pro"
 	font-weight 600
 .medium
 	font-size 24px
-.carousel
+.wrapper_owl
+	width 80%
+	margin 0 auto
+	position relative
+	+media(768px)
+		width 100%
+	.item
+		margin 20px
+		+media(768px)
+			margin 10px
+	.owl-nav
+		&.disabled
+			display block
+			+media(768px)
+				display none
+			.owl-prev
+				position absolute
+				left -50px
+				bottom calc(50% - 17px)
+				@extend .arrow-prew
+			.owl-next
+				position absolute
+				right -50px
+				bottom calc(50% - 17px)
+				@extend .arrow-next
+.text-block
 	display -webkit-flex
 	display -moz-flex
 	display -ms-flex
 	display -o-flex
 	display flex
-	flex-wrap nowrap
-	position relative
-	.item
-		margin 20px
+	padding 25px
+	flex-wrap wrap
+	&.publication
+		.text-block_text
+			transition animation
+			padding 20px
+			&:hover
+				background active
+		&:hover
+			background transparent
+	h2
+		width 100%
+	&:hover
+		background active
+		transition animation
+	p.tac
+		width 40%
+		+media(768px)
+			display none
+		img
+			width 50%
+	.text-block_text
+		padding 0 55px
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		align-items flex-start
+		justify-content center
+		width 60%
+		+media(768px)
+			width 100% !important
+			padding 0 20px
+		p
+			width 100%
+			line-height 1.5
+			margin-bottom 30px
+.public-head
+	&.full
+		height calc(100vh - 150px)

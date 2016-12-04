@@ -26,6 +26,9 @@ p.meteo {
 .ttu {
   text-transform: uppercase !important;
 }
+.tdu {
+  text-decoration: underline;
+}
 .ttn,
 p.meteo {
   text-transform: none !important;
@@ -36,6 +39,9 @@ p.meteo {
 .tal,
 p.meteo {
   text-align: left !important;
+}
+.taj {
+  text-align: justify !important;
 }
 .tar {
   text-align: right !important;
@@ -48,6 +54,9 @@ p.meteo {
 }
 .small {
   width: 33.33% !important;
+}
+.semi {
+  width: 50% !important;
 }
 .wrap {
   -webkit-flex-wrap: wrap !important;

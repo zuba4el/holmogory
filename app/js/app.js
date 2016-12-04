@@ -1,10 +1,14 @@
 $(function(){
-  $('.public-head.full').height($('.public-head.full').width()/2.35);
+  var hg = ($('.public-head.full').width()/2.35)
+  //$('.public-head.full').height($('.public-head.full').width()/2.35);
   $('.index-social_item').height($('.index-social_item').width()/4.14);
+  //$('.index').css("padding-top", hg);
   $(window).resize(function(){
-    $('.public-head.full').height($('.public-head.full').width()/2.35);
-  	$('.index-social_item').height($('.index-social_item').width()/4.14);
+   // $('.public-head.full').height($('.public-head.full').width()/2.35);
+  $('.index-social_item').height($('.index-social_item').width()/4.14);
+  //$('.index').css("padding-top", hg);
   });
+  console.log(hg)
 });
 
 $(function(){
@@ -14,7 +18,7 @@ $(function(){
   	$(".gallery-list").owlCarousel({
 		items : 3,
 		navigation : true,
-		navText : ['', '']
+		navText : ['', ''],
   	});
 	$('.gallery-list--item').click(function(){
 		$(".gallery-current img").attr("src", $(this).attr("src"));
@@ -64,25 +68,22 @@ $(document).ready(function () {
     });
 });
 
-   $(document).ready(function() {
-
-      var owl = $(".owl-carousel");
-
-      owl.owlCarousel({
-
-      items : 2, //10 items above 1000px browser width
-      itemsDesktop : [1000,2], //5 items between 1000px and 901px
-      itemsDesktopSmall : [900,2], // 3 items betweem 900px and 601px
-      itemsTablet: [600,2], //2 items between 600 and 0;
-      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-      
-      });
-      $(".next").click(function(){
-        owl.trigger('owl.next');
-      })
-      $(".prev").click(function(){
-        owl.trigger('owl.prev');
-      })
+$(document).ready(function() {
+	if($(window).width() < 480){
+		$(".owl-carousel").owlCarousel({
+				items : 1,
+				navigation : true,
+				navText : ['', '']   
+			});
+		}
+	else{
+		$(".owl-carousel").owlCarousel({
+			items : 2,
+			navigation : true,
+			navText : ['', '']   
+		});
+	}
+});
 
 
-    });
+
