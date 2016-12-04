@@ -60,6 +60,29 @@ $(document).ready(function () {
     	$(this).find(".more").toggleClass("opacity");
     });
     $('.index-social_item').hover(function () {
-    	$(this).children("p").toggleClass("opacity");
+    	$(this).children("p").toggleClass("opacity");//TODO fix find
     });
 });
+
+   $(document).ready(function() {
+
+      var owl = $(".owl-carousel");
+
+      owl.owlCarousel({
+
+      items : 2, //10 items above 1000px browser width
+      itemsDesktop : [1000,2], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,2], // 3 items betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0;
+      itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      
+      });
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+
+
+    });

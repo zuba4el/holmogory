@@ -276,7 +276,7 @@
   font-weight: normal;
 }
 .index {
-  padding-top: 59vh;
+  padding-top: 65vh;
 }
 .index-block {
   display: -webkit-flex;
@@ -520,6 +520,21 @@
 }
 .medium {
   font-size: 24px;
+}
+.carousel {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  position: relative;
+}
+.carousel .item {
+  margin: 20px;
 }
 /*# sourceMappingURL=app/stylus/template-style.css.map */
 /*# sourceMappingURL=template-style.css.map */

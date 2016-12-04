@@ -1,6 +1,46 @@
-extends include.jade/header
-
-block content
+doctype html
+head
+  meta(charset="utf-8")
+  meta(name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, user-scalable=no")
+  title holmogory
+  link(rel='stylesheet', href='css/reset.css')
+  link(rel='stylesheet', href='css/owl.carousel.min.css')
+  link(rel='stylesheet', href='css/jquery.fancybox.css')
+  link(rel='stylesheet', href='css/main-style.css')
+  link(rel='stylesheet', href='css/template-style.css')
+body
+  header
+      .header-upper
+        .wrapper
+          .header-upper--logo
+            img(src="img/rosautodor_min.png", alt="")
+            p.font-white.tal <span class="font-bold">РОСАВТОДОР</span><br>федеральное дорожное агенство
+          .header-upper--description
+            p.font-white <span class="font-bold">ФКУ УПРДОР "ХОЛМОГОРЫ"</span><br> хорошие дороги-хорошим водителям!
+          .header-upper--search
+            input(type="text" placeholder="Поиск...")
+            button.btn_more Найти
+      .header-top
+        .wrapper
+          .header-top_menu
+            include include.jade/menu.jade
+          ul.header-top_nav
+            li
+              a(href="index.html") 
+                img(src="img/logo.png", alt="logo")
+            li
+              a(href="#") Об управлении
+            li
+              a(href="#") Публикации в СМИ
+            li
+              a(href="#") Фотогалерея
+            li
+              a(href="#") Важно
+            li
+              a(href="#") Росавтодор
+          .header-top_phone
+            P телефон для связи:
+            a(tel="+7(8172)72-37-55") +7(8172)72-37-55
   .content
       .public.full
           .public-head.full
@@ -72,4 +112,14 @@ block content
                 a.btn.next.arrow-next
 
 
-  include include.jade/footer
+  .clear
+  footer
+    .wrapper
+      .company ФКУ УПРДОР "Холмогоры" 2016.
+      .studio Разработка и дизайн - <span> Aitek </span>
+    .up
+      a(href="#")
+  script(type='text/javascript', src='js/jquery.min.js')
+  script(type='text/javascript', src='js/owl.carousel.min.js')
+  script(type='text/javascript', src='js/jquery.fancybox.js')
+  script(type='text/javascript', src='js/app.js')
