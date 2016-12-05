@@ -1,10 +1,36 @@
 extends include.jade/header.jade
 
 block content
-  .content
+  .content.call
       .wrapper
         .public.full
           .public-head
-            h1 Лабораторный контроль УПРДОР "Холмогоры"
+            h2 Online приемная: Новое обращение
           .public-fill
-  include include.jade/footer.jade
+            a.reverse(href="") 
+              p.font-bold.font-blue Cписок обращений
+              .arrow-prew
+            .callback
+              - for (var x = 0; x < 4; x++)
+                .callback-item
+                  p.tal.font-blue.font-bold.font-l Фамилия Имя Отчество
+                  input(type="text" placeholder="Введите Ваши данные")
+            .new
+              .new-item
+                p.tal.font-blue.font-bold.font-l Тема
+                input(type="text" placeholder="Введите Ваши данные")
+              .new-item
+                p.tal.font-blue.font-bold.font-l Тема
+                textarea(placeholder="Введите Ваши данные")
+            .checkbox
+              input#check1(type='checkbox', name='check', value='check1')
+              label(for='check1') Согласие с правилами работы on-line приемной
+              br
+              input#check2(type='checkbox', name='check', value='check2')
+              label(for='check2') Согласие с правилами работы on-line приемной
+
+            button.btn_more Создать обращение
+
+          
+          include include.jade/paggination
+  include include.jade/footer

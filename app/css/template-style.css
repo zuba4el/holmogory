@@ -21,6 +21,21 @@
   font-weight: normal !important;
   font-family: "RobotoRegular" !important;
 }
+.font-xs {
+  font-size: 50%;
+}
+.font-s {
+  font-size: 80%;
+}
+.font-l {
+  font-size: 100%;
+}
+.font-xl {
+  font-size: 120%;
+}
+.font-xxl {
+  font-size: 150%;
+}
 .ttu {
   text-transform: uppercase !important;
 }
@@ -751,6 +766,12 @@
 .public-head.full {
   height: calc(100vh - 150px);
 }
+@media screen and (max-width: 480px) {
+  .call .public-fill {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 .call .flex {
   display: -webkit-flex;
   display: -moz-flex;
@@ -774,6 +795,27 @@
   .call .flex button {
     margin: 10px;
   }
+}
+.call .reverse {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.call .reverse p {
+  margin: 0 10px;
+  font-size: 16px;
 }
 .call .media {
   display: none !important;
@@ -883,6 +925,128 @@
 .call .accordeon-box_content .profit a.right {
   border-radius: 0 0 10px 0;
   border-left: 1px solid #336687;
+}
+.callback {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.callback-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 49%;
+  margin: 10px 0;
+}
+@media screen and (max-width: 768px) {
+  .callback-item {
+    width: 100%;
+  }
+}
+.callback-item input {
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #dcf1ff;
+  color: #cbd3d8;
+  transition: all 0.5s ease;
+}
+.callback-item input:hover {
+  box-shadow: 0 0 10px 1px #cbd3d8;
+}
+.callback-item input:focus {
+  outline: 0;
+  box-shadow: 0 0 10px 1px #57ade6;
+}
+.new {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.new-item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+.new-item input,
+.new-item textarea {
+  padding: 10px;
+  border: 0;
+  border-radius: 3px;
+  background: #dcf1ff;
+  color: #cbd3d8;
+  transition: all 0.5s ease;
+  margin: 10px 0;
+}
+.new-item input:hover,
+.new-item textarea:hover {
+  box-shadow: 0 0 10px 1px #cbd3d8;
+}
+.new-item input:focus,
+.new-item textarea:focus {
+  outline: 0;
+  box-shadow: 0 0 10px 1px #57ade6;
+}
+.new-item textarea {
+  min-height: 125px;
+  color: #000;
+  font-size: 16px;
+}
+.checkbox input[type=checkbox] {
+  display: none;
+}
+.checkbox label {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px 0;
+}
+.checkbox label:nth-last-child(1) {
+  margin-bottom: 25px;
+}
+.checkbox label::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url("../img/checkbox.png");
+  background-position: 15px 0;
+  margin-right: 5px;
+}
+.checkbox input[type=checkbox]:checked + label:before {
+  background: url("../img/checkbox.png");
+  background-position: 0 0;
 }
 /*# sourceMappingURL=app/stylus/template-style.css.map */
 /*# sourceMappingURL=template-style.css.map */

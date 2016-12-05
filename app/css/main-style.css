@@ -23,6 +23,21 @@ p.meteo {
   font-weight: normal !important;
   font-family: "RobotoRegular" !important;
 }
+.font-xs {
+  font-size: 50%;
+}
+.font-s {
+  font-size: 80%;
+}
+.font-l {
+  font-size: 100%;
+}
+.font-xl {
+  font-size: 120%;
+}
+.font-xxl {
+  font-size: 150%;
+}
 .ttu {
   text-transform: uppercase !important;
 }

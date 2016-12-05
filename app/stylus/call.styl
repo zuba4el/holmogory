@@ -1,4 +1,8 @@
 .call
+	.public-fill
+		+media(480px)
+			width 90%
+			margin 0 auto
 	.flex
 		display -webkit-flex
 		display -moz-flex
@@ -11,6 +15,18 @@
 			flex-direction column-reverse
 			button
 				margin 10px
+	.reverse
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction row-reverse
+		justify-content flex-end
+		align-items center
+		p
+			margin 0 10px
+			font-size 16px
 	.media
 		display none !important
 		input
@@ -82,5 +98,92 @@
 						&.right
 							border-radius 0 0 10px 0
 							border-left 1px solid blue
-					
-						
+.callback
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-wrap wrap
+	justify-content space-between
+	&-item
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		width 49%
+		margin 10px 0
+		+media(768px)
+			width 100%
+		input
+			padding 10px
+			border 0
+			border-radius 3px
+			background #dcf1ff
+			color active
+			transition animation
+			&:hover
+				box-shadow 0 0 10px 1px active
+			&:focus
+				outline 0
+				box-shadow 0 0 10px 1px lightblue	
+.new
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	flex-wrap wrap
+	&-item
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-direction column
+		width 100%
+		input, textarea
+			padding 10px
+			border 0
+			border-radius 3px
+			background #dcf1ff
+			color active
+			transition animation
+			margin 10px 0
+			&:hover
+				box-shadow 0 0 10px 1px active
+			&:focus
+				outline 0
+				box-shadow 0 0 10px 1px lightblue	
+		textarea
+			min-height 125px
+			color #000
+			font-size 16px	
+.checkbox
+	input[type=checkbox]
+		display none
+	label
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		margin 5px 0
+		&:nth-last-child(1)
+			margin-bottom 25px
+		&::before
+			content ""
+			display block
+			size (15px 15px)
+			background url('../img/checkbox.png')
+			background-position: 15px 0
+			margin-right 5px
+	input[type=checkbox]
+		&:checked
+			& + label:before 
+				background url('../img/checkbox.png')
+				background-position:  0 0	
+
+			
