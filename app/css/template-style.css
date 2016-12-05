@@ -751,5 +751,85 @@
 .public-head.full {
   height: calc(100vh - 150px);
 }
+.call .public-head {
+  background: #cbd3d8;
+  padding: 28px 56px;
+}
+.call .public-head h2 div {
+  float: right;
+}
+.call .accordeon-box {
+  border: 0;
+}
+.call .accordeon-box .date {
+  margin: -22px 0 22px 0;
+}
+.call .accordeon-box.active {
+  background: transparent;
+}
+.call .accordeon-box--button {
+  position: relative;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.call .accordeon-box p {
+  text-align: left;
+}
+.call .accordeon-box_content {
+  margin-top: 20px;
+  background: #3d79a1;
+  padding: 20px;
+  border-radius: 10px;
+}
+.call .accordeon-box_content p {
+  color: #fff;
+  line-height: 1.3;
+}
+.call .accordeon-box_content .profit {
+  width: 20%;
+  background: #1f3d52;
+  border-radius: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+@media screen and (max-width: 960px) {
+  .call .accordeon-box_content .profit {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 640px) {
+  .call .accordeon-box_content .profit {
+    width: 90%;
+  }
+}
+.call .accordeon-box_content .profit p {
+  width: 100%;
+  padding: 10px 10px 0 10px;
+}
+.call .accordeon-box_content .profit a {
+  width: 50%;
+  padding: 10px;
+  border-top: 2px solid #336687;
+}
+.call .accordeon-box_content .profit a:hover {
+  background: #336687;
+}
+.call .accordeon-box_content .profit a.left {
+  border-radius: 0 0 0 10px;
+  border-right: 1px solid #336687;
+}
+.call .accordeon-box_content .profit a.right {
+  border-radius: 0 0 10px 0;
+  border-left: 1px solid #336687;
+}
 /*# sourceMappingURL=app/stylus/template-style.css.map */
 /*# sourceMappingURL=template-style.css.map */

@@ -1816,6 +1816,9 @@ footer div {
 * {
   box-sizing: border-box;
 }
+hr {
+  width: 100%;
+}
 body {
   background: #e0e0e0;
 }

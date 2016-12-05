@@ -1,0 +1,18 @@
+extends include.jade/header.jade
+
+block content
+  .content
+      .wrapper
+        .public.full
+          .public-head
+            h1 Лабораторный контроль УПРДОР "Холмогоры"
+          .public-fill
+            .photo
+              //Нужно дублировать текст из <p> в <img title=""/> Если что, можно скрипт написать
+              - for (var x = 0; x < 12; x++)
+                .photo-block
+                  a.photo-block_item(href='img/upload/1_b.jpg', data-fancybox-group='gallery', title='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, ad!') 
+                    img(src='img/upload/1_s.jpg', alt='')
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, aspernatur?
+              .btn_more Показать больше
+  include include.jade/footer.jade
