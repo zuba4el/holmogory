@@ -751,12 +751,65 @@
 .public-head.full {
   height: calc(100vh - 150px);
 }
+.call .flex {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 640px) {
+  .call .flex {
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .call .flex button {
+    margin: 10px;
+  }
+}
+.call .media {
+  display: none !important;
+}
+.call .media input {
+  border: 1px solid #336687;
+}
+@media screen and (max-width: 960px) {
+  .call .media {
+    display: block !important;
+  }
+}
+.call .header-upper--search {
+  width: auto;
+}
+@media screen and (max-width: 960px) {
+  .call .header-upper--search {
+    display: none;
+  }
+}
 .call .public-head {
   background: #cbd3d8;
   padding: 28px 56px;
 }
+@media screen and (max-width: 480px) {
+  .call .public-head {
+    padding: 14px 56px;
+  }
+}
 .call .public-head h2 div {
   float: right;
+}
+@media screen and (max-width: 960px) {
+  .call .public-head button {
+    display: none;
+  }
 }
 .call .accordeon-box {
   border: 0;

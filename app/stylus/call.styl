@@ -1,10 +1,37 @@
 .call
+	.flex
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		align-items center
+		+media(640px)
+			flex-direction column-reverse
+			button
+				margin 10px
+	.media
+		display none !important
+		input
+			border 1px solid blue
+		+media(960px)
+			display block !important
+	.header-upper--search
+		width auto
+		+media(960px)
+			display none
 	.public-head
 		background active
 		padding 28px 56px
+		+media(480px)
+			padding 14px 56px
 		h2
 			div
 				float right
+		button
+			+media(960px)
+				display none
 	.accordeon
 		&-box
 			border 0
