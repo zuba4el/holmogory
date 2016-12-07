@@ -430,10 +430,10 @@ header .wrapper {
   padding: 5px 20px;
 }
 .min .header-upper {
-  top: -55px;
+  top: -55px !important;
 }
 .min .header-top {
-  top: 0;
+  top: 0 !important;
 }
 .header-upper {
   height: 90px;
@@ -570,7 +570,7 @@ header .wrapper {
 .menu ul {
   background: #1f3d52;
   padding: 0 0 15px;
-  margin-top: -2000px;
+  margin-top: -200vh;
   transition: all 1s ease-out;
 }
 @media (max-width: 480px) {
@@ -1819,6 +1819,9 @@ footer div {
   footer div {
     line-height: 25px;
   }
+}
+#panel {
+  height: 147px;
 }
 * {
   box-sizing: border-box;

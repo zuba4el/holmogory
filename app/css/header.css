@@ -53,10 +53,10 @@ media(480px)
   padding: 5px 20px;
 }
 .min .header-upper {
-  top: -55px;
+  top: -55px !important;
 }
 .min .header-top {
-  top: 0;
+  top: 0 !important;
 }
 .header-upper {
   height: 90px;
@@ -178,7 +178,7 @@ media(480px)
 .menu ul {
   background: #00008b;
   padding: 0 0 15px;
-  margin-top: -2000px;
+  margin-top: -200vh;
   transition: all 1s ease-out;
 }
 @media (max-width: 480px) {

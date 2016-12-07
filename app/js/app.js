@@ -46,6 +46,33 @@ $(function(){
 		}
 });
 
+
+$(document).ready(function(){
+		
+			$(function(){
+
+				if ($(window).scrollTop() > 147) {
+					console.log("Больше 100")
+						} else {
+					console.log("меньше 100")
+						};
+
+				$(".header-upper").css('top', panel);
+				$(".header-top").css('top', panelTop);
+				$(".min").children(".header-upper").css('top', "-55px");
+				$(".min").children(".header-top").css('top', "0");	
+			});	
+	var panel=$("#panel").height();
+	var panelTop=panel + 90;
+	$(function(){
+		if ($(window).scrollTop() > 147) {
+			$(".header-top").css('top', "0");
+		} else {
+		};	
+	});
+});
+
+
 $(document).ready(function(){
 	$("body").removeClass("min");
 	$(window).scroll(function(){
