@@ -337,17 +337,6 @@ p.meteo {
   font-style: normal;
   font-weight: normal;
 }
-header {
-  width: 100%;
-  height: 55px;
-  background: #336687;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
 header .wrapper {
   box-shadow: 0 0 0 0 transparent;
   margin: 0 auto;
@@ -463,6 +452,7 @@ header .wrapper {
   width: 100%;
   height: 60px;
   transition: all 0.5s ease;
+  z-index: 2;
 }
 .header-top_menu {
   width: 231px;
@@ -580,8 +570,8 @@ header .wrapper {
 .menu ul {
   background: #1f3d52;
   padding: 0 0 15px;
-  margin-top: -550px;
-  transition: all 0.5s ease;
+  margin-top: -2000px;
+  transition: all 1s ease-out;
 }
 @media (max-width: 480px) {
   .menu ul {
@@ -591,6 +581,8 @@ header .wrapper {
 }
 .menu ul.open {
   margin: 0;
+  max-height: calc(100vh - 60px);
+  overflow: auto;
 }
 .menu ul li {
   padding: 10px 25px;
